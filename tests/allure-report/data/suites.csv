@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Apr 14 11:53:29 CDT 2020","Tue Apr 14 11:53:53 CDT 2020","23674","","tests","TestHRM","","","test_Logo",""
-"passed","Tue Apr 14 11:53:53 CDT 2020","Tue Apr 14 11:53:58 CDT 2020","4744","","tests","TestHRM","","","test_email",""
-"failed","Tue Apr 14 11:53:58 CDT 2020","Tue Apr 14 11:54:02 CDT 2020","4229","","tests","TestHRM","","","test_contact_us",""
