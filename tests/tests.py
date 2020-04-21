@@ -66,6 +66,6 @@ class TestHRM(BaseTest):
         textContent = self.driver.find_element_by_xpath("//*[@id='et-secondary-nav']/li[1]/a")
         print('time test_contact_us {}'.format(datetime.now() - x))
         if textContent.text=='ERROR':
-            assert True
-        else:
             assert False
+        else:
+            assert True
