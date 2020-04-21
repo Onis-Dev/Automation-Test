@@ -1,0 +1,84 @@
+{
+  "uid" : "94fbdd024aa5cb1",
+  "name" : "test_email",
+  "fullName" : "tests.TestHRM#test_email",
+  "historyId" : "67fb8acc7cf79f70905a24be55f35604",
+  "time" : {
+    "start" : 1586883101314,
+    "stop" : 1586883106239,
+    "duration" : 4925
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver_init",
+    "time" : {
+      "start" : 1586883067411,
+      "stop" : 1586883070580,
+      "duration" : 3169
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "driver_init::0",
+    "time" : {
+      "start" : 1586883110735,
+      "stop" : 1586883110829,
+      "duration" : 94
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "suite",
+    "value" : "tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHRM"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-5N2TE77"
+  }, {
+    "name" : "thread",
+    "value" : "15572-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "94fbdd024aa5cb1.json",
+  "parameterValues" : [ ]
+}
