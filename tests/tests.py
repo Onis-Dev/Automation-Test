@@ -24,7 +24,7 @@ chrome_options.add_argument("window-size=1400,600")
 @pytest.fixture(scope="class")
 def driver_init(request):
     x = datetime.now()
-    # web_driver = webdriver.Chrome(executable_path="D:\Documentos\Development\Automation\/tests\chromedriver.exe", chrome_options=chrome_options)
+    web_driver = webdriver.Chrome(executable_path=r"D:\julio\Documents\ONIS\smoothApps\automationTests\Automation-Test\chromedriver.exe", chrome_options=chrome_options)
     web_driver = webdriver.Chrome(chrome_options=chrome_options)
     request.cls.driver = web_driver
     print('time driver_init {}'.format(datetime.now() - x))

@@ -1,3 +1,11 @@
-selenium
+pytest-selenium==1.14.0
+pytz==2018.4
+webium==1.2.1
+pytest==3.7.0
+pytest-shutil==1.3.0
+pytest-rerunfailures==5.0
 allure-pytest
-pytest
+xlrd
+jproperties==2.0.0
+pytest-xdist==1.26.1
+urllib3==1.24.1
