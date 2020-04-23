@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 @pytest.mark.usefixtures("setup")
 class TestTopHeader:
     def test_social_media_icons(self):
-        facebookIcon = self.driver.find_element(By.XPATH, '//*[@id="et-secondary-menu"]/ul[1]/li[1]/a/span').is_displayed()
+        facebookIcon = self.driver.find_element(By.XPATH, '//*[@id="et-secondary-menu"]/ul[1]/li[1]/a').is_displayed()
         twitterIcon = self.driver.find_element(By.XPATH,'//*[@id="et-secondary-menu"]/ul[1]/li[2]/a').is_displayed()
         googleIcon = self.driver.find_element(By.XPATH,'//*[@id="et-secondary-menu"]/ul[1]/li[3]/a').is_displayed()
         linkedinIcon = self.driver.find_element(By.XPATH,'//*[@id="et-secondary-menu"]/ul[1]/li[4]/a').is_displayed()
