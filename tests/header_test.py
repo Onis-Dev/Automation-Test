@@ -34,6 +34,7 @@ class TestHeader:
     
     def clickEvent(self, element):
         element.click()
+        time.sleep(3)
         return self.driver.current_url
 
     def getAboutLink(self):
@@ -115,7 +116,6 @@ class TestHeader:
         actions =chains(self.driver)
         actions.move_to_element(about_link).perform()
         company_link, partners_link, testimonials_link, careers_link = self.getSubmenuAbout()
-        company_link = self.driver.find_element(By.CSS_SELECTOR, '#menu-item-5168 > a')
         assert company_link.is_displayed(), 'submenu COMPANY is not being displayed'
         assert partners_link.is_displayed(), 'submenu PARTNERS is not being displayed'
         assert testimonials_link.is_displayed(), 'submenu TESTIMONIALS is not being displayed'
