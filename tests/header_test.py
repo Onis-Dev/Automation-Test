@@ -28,9 +28,9 @@ class TestHeader:
         return self.driver.find_element(By.ID, 'menu-item-7212')
     
     def getSubmenuTraining(self):
-        return (self.driver.find_element(By.CSS_SELECTOR, '#menu-item-5151'),
-               self.driver.find_element(By.CSS_SELECTOR, '#menu-item-8080'),
-               self.driver.find_element(By.CSS_SELECTOR, '#menu-item-5152'))
+        return (self.driver.find_element(By.ID, '#menu-item-5151'),
+               self.driver.find_element(By.ID, '#menu-item-8080'),
+               self.driver.find_element(By.ID, '#menu-item-5152'))
     
     def clickEvent(self, element):
         element.click()
@@ -41,19 +41,19 @@ class TestHeader:
         return self.driver.find_element(By.ID, 'menu-item-5580')
     
     def getSubmenuAbout(self):
-        return (self.driver.find_element(By.CSS_SELECTOR, '#menu-item-5168'),
-               self.driver.find_element(By.CSS_SELECTOR, '#menu-item-5169'),
-               self.driver.find_element(By.CSS_SELECTOR, '#menu-item-4706'),
-               self.driver.find_element(By.CSS_SELECTOR, '#menu-item-7943'))
+        return (self.driver.find_element(By.ID, '#menu-item-5168'),
+               self.driver.find_element(By.ID, '#menu-item-5169'),
+               self.driver.find_element(By.ID, '#menu-item-4706'),
+               self.driver.find_element(By.ID, '#menu-item-7943'))
 
     def getResourcesLink(self):
         return self.driver.find_element(By.ID, 'menu-item-5581')
     
     def getSubmenuResources(self):
-        return (self.driver.find_element(By.CSS_SELECTOR, '#menu-item-7771'),
-               self.driver.find_element(By.CSS_SELECTOR, '#menu-item-5171'),
-               self.driver.find_element(By.CSS_SELECTOR, '#menu-item-5176'),
-               self.driver.find_element(By.CSS_SELECTOR, '#menu-item-5172'))
+        return (self.driver.find_element(By.ID, '#menu-item-7771'),
+               self.driver.find_element(By.ID, '#menu-item-5171'),
+               self.driver.find_element(By.ID, '#menu-item-5176'),
+               self.driver.find_element(By.ID, '#menu-item-5172'))
     #util methods | END
 
     def test_header_training_link(self):
@@ -196,6 +196,7 @@ class TestHeader:
         actions =chains(self.driver)
         actions.move_to_element(resources_link).perform()
         agile_tools_link = self.getSubmenuResources()[3]
+        
         path = self.clickEvent(agile_tools_link)
         assert path == self.CONST.get('SUBMENU_AGILE_TOOLS'), 'submenu AGILE TOOLS link is not working' 
     
