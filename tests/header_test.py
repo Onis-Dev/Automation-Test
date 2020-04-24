@@ -34,6 +34,7 @@ class TestHeader:
     
     def clickEvent(self, element):
         element.click()
+        time.sleep(3)
         return self.driver.current_url
 
     def getAboutLink(self):
