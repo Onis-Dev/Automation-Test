@@ -4,6 +4,9 @@
         "PHONE": "214-785-5570",
         "EMAIL": "info@smoothapps.com"
     },
+    "footer":{
+        "COPYRIGHT": "Copyright \u00a92015-2017 SmoothApps. All Rights Reserved."
+    },
     "header":{
         "HOME_LINK": "https://smoothapps.com/",
         "TRAINING_LINK": "https://smoothapps.com/index.php/training/",
