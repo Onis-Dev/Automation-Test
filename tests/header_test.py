@@ -68,6 +68,7 @@ class TestHeader:
         training_link = self.getTrainingLink()
         actions =chains(self.driver)
         actions.move_to_element(training_link).perform()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR,'#menu-item-7212 > ul')))
         agile_framework_link, agile_practices_link, agile_culture_link = self.getSubmenuTraining()
         assert agile_framework_link.is_displayed(), 'submenu AGILE FRAMEWORK is not being displayed'
         assert agile_practices_link.is_displayed(), 'submenu AGILE PRACTICES is not being displayed'
