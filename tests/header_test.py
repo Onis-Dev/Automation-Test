@@ -118,6 +118,7 @@ class TestHeader:
         about_link = self.getAboutLink()
         actions =chains(self.driver)
         actions.move_to_element(about_link).perform()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR,'#menu-item-5580 > ul')))
         company_link, partners_link, testimonials_link, careers_link = self.getSubmenuAbout()
         assert company_link.is_displayed(), 'submenu COMPANY is not being displayed'
         assert partners_link.is_displayed(), 'submenu PARTNERS is not being displayed'
@@ -162,9 +163,10 @@ class TestHeader:
 
     def test_header_resources_submenu(self):
         resources_link = self.getResourcesLink()
-        scrum_events_link, agile_videos_link, agile_presentations_link, agile_tools_link = self.getSubmenuResources()
         actions =chains(self.driver)
         actions.move_to_element(resources_link).perform()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR,'#menu-item-5581 > ul')))
+        scrum_events_link, agile_videos_link, agile_presentations_link, agile_tools_link = self.getSubmenuResources()
         assert scrum_events_link.is_displayed(), 'submenu SCRUM EVENTS PLAYBOOK is not being displayed'
         assert agile_videos_link.is_displayed(), 'submenu AGILE VIDEOS is not being displayed'
         assert agile_presentations_link.is_displayed(), 'submenu AGILE PRESENTATIONS is not being displayed'
