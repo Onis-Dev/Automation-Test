@@ -1,0 +1,28 @@
+{
+    "topHeader":{
+        "CONTACTUS": "| Contact Us |",
+        "PHONE": "214-785-5570",
+        "EMAIL": "info@smoothapps.com"
+    },
+    "footer":{
+        "COPYRIGHT": "Copyright \u00a92015-2017 SmoothApps. All Rights Reserved."
+    },
+    "header":{
+        "HOME_LINK": "https://smoothapps.com/",
+        "TRAINING_LINK": "https://smoothapps.com/index.php/training/",
+        "SUBMENU_AGILEFRAMEWORK": "https://smoothapps.com/index.php/agile-frameworks/",
+        "SUBMENU_AGILEPRACTICES_TOOLS": "https://smoothapps.com/index.php/training/agile-practices-and-tools/",
+        "SUBMENU_AGILECULTURE": "https://smoothapps.com/index.php/training/agile-culture/",
+        "SERVICES_LINK": "https://smoothapps.com/index.php/services/",
+        "EVENTS_LINK":"https://smoothapps.com/index.php/upcoming-trainings/",
+        "SUBMENU_COMPANY": "https://smoothapps.com/index.php/about/company/",
+        "SUBMENU_PARTNERS": "https://smoothapps.com/index.php/about/partners/",
+        "SUBMENU_TESTIMONIALS": "https://smoothapps.com/index.php/about/testimonials/",
+        "SUBMENU_CAREERS": "https://smoothapps.com/index.php/careers/",
+        "SUBMENU_SCRUM_EVENTS": "https://smoothapps.com/index.php/scrum-framework/",
+        "SUBMENU_AGILE_VIDEOS": "https://smoothapps.com/index.php/resources/agilato/",
+        "SUBMENU_AGILE_PRESENTATIONS": "https://smoothapps.com/index.php/resources/presentations/",
+        "SUBMENU_AGILE_TOOLS": "https://smoothapps.com/index.php/resources/tools/",
+        "BLOG_LINK": "https://smoothapps.com/index.php/blog/"
+    }
+}
