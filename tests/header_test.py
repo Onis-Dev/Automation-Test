@@ -34,6 +34,7 @@ class TestHeader:
     
     def clickEvent(self, element):
         element.click()
+        time.sleep(3)
         return self.driver.current_url
 
     def getAboutLink(self):
@@ -63,34 +64,34 @@ class TestHeader:
     
     def test_header_trianing_submenu(self):
         training_link = self.getTrainingLink()
-        agile_framework_link, agile_practices_link, agile_culture_link = self.getSubmenuTraining()
         actions =chains(self.driver)
         actions.move_to_element(training_link).perform()
+        agile_framework_link, agile_practices_link, agile_culture_link = self.getSubmenuTraining()
         assert agile_framework_link.is_displayed(), 'submenu AGILE FRAMEWORK is not being displayed'
         assert agile_practices_link.is_displayed(), 'submenu AGILE PRACTICES is not being displayed'
         assert agile_culture_link.is_displayed(), 'submenu AGILE CULTURE is not being displayed'
 
     def test_header_training_submenu_agileFramework_redirect(self):
         training_link = self.getTrainingLink()
-        agile_framework_link = self.getSubmenuTraining()[0]
         actions =chains(self.driver)
         actions.move_to_element(training_link).perform()
+        agile_framework_link = self.getSubmenuTraining()[0]
         path = self.clickEvent(agile_framework_link)
         assert path == self.CONST.get('SUBMENU_AGILEFRAMEWORK'), 'submenu AGILE FRAMEWORK link is not working'
 
     def test_header_training_submenu_agilepractices_redirect(self):
         training_link = self.getTrainingLink()
-        agile_practices_link = self.getSubmenuTraining()[1]
         actions =chains(self.driver)
         actions.move_to_element(training_link).perform()
+        agile_practices_link = self.getSubmenuTraining()[1]
         path = self.clickEvent(agile_practices_link)
         assert path == self.CONST.get('SUBMENU_AGILEPRACTICES_TOOLS'), 'submenu AGILE PRACTICES and tools link is not working'
     
     def test_header_training_submenu_agileCulture_redirect(self):
         training_link = self.getTrainingLink()
-        agile_culture_link = self.getSubmenuTraining()[2]
         actions =chains(self.driver)
         actions.move_to_element(training_link).perform()
+        agile_culture_link = self.getSubmenuTraining()[2]
         path = self.clickEvent(agile_culture_link)
         assert path == self.CONST.get('SUBMENU_AGILECULTURE'), 'submenu AGILE CULTURE link is not working'
 
@@ -112,9 +113,9 @@ class TestHeader:
 
     def test_header_about_submenu(self):
         about_link = self.getAboutLink()
-        company_link, partners_link, testimonials_link, careers_link = self.getSubmenuAbout()
         actions =chains(self.driver)
         actions.move_to_element(about_link).perform()
+        company_link, partners_link, testimonials_link, careers_link = self.getSubmenuAbout()
         assert company_link.is_displayed(), 'submenu COMPANY is not being displayed'
         assert partners_link.is_displayed(), 'submenu PARTNERS is not being displayed'
         assert testimonials_link.is_displayed(), 'submenu TESTIMONIALS is not being displayed'
@@ -122,33 +123,33 @@ class TestHeader:
     
     def test_header_about_submenu_company_redirect(self):
         about_link = self.getAboutLink()
-        company_link = self.getSubmenuAbout()[0]
         actions =chains(self.driver)
         actions.move_to_element(about_link).perform()
+        company_link = self.getSubmenuAbout()[0]
         path = self.clickEvent(company_link)
         assert path == self.CONST.get('SUBMENU_COMPANY'), 'submenu COMPANY link is not working'
     
     def test_header_about_submenu_partners_redirect(self):
         about_link = self.getAboutLink()
-        partners_link = self.getSubmenuAbout()[1]
         actions =chains(self.driver)
         actions.move_to_element(about_link).perform()
+        partners_link = self.getSubmenuAbout()[1]
         path = self.clickEvent(partners_link)
         assert path == self.CONST.get('SUBMENU_PARTNERS'), 'submenu PARTNERS link is not working'
     
     def test_header_about_submenu_testimonial_redirect(self):
         about_link = self.getAboutLink()
-        testimonial_link = self.getSubmenuAbout()[2]
         actions =chains(self.driver)
         actions.move_to_element(about_link).perform()
+        testimonial_link = self.getSubmenuAbout()[2]
         path = self.clickEvent(testimonial_link)
         assert path == self.CONST.get('SUBMENU_TESTIMONIALS'), 'submenu TESTIMONIALS link is not working'
     
     def test_header_about_submenu_careers_redirect(self):
         about_link = self.getAboutLink()
-        careers_link = self.getSubmenuAbout()[3]
         actions =chains(self.driver)
         actions.move_to_element(about_link).perform()
+        careers_link = self.getSubmenuAbout()[3]
         path = self.clickEvent(careers_link)
         assert path == self.CONST.get('SUBMENU_CAREERS'), 'submenu CAREERS link is not working'
     
@@ -168,33 +169,33 @@ class TestHeader:
     
     def test_header_resources_submenu_scrumEvents_redirect(self):
         resources_link = self.getResourcesLink()
-        scrum_events_link = self.getSubmenuResources()[0]
         actions =chains(self.driver)
         actions.move_to_element(resources_link).perform()
+        scrum_events_link = self.getSubmenuResources()[0]
         path = self.clickEvent(scrum_events_link)
         assert path == self.CONST.get('SUBMENU_SCRUM_EVENTS'), 'submenu SCRUM EVENTS PLAYBOOK link is not working'
     
     def test_header_resources_submenu_agileVideos_redirect(self):
         resources_link = self.getResourcesLink()
-        agile_videos_link = self.getSubmenuResources()[1]
         actions =chains(self.driver)
         actions.move_to_element(resources_link).perform()
+        agile_videos_link = self.getSubmenuResources()[1]
         path = self.clickEvent(agile_videos_link)
         assert path == self.CONST.get('SUBMENU_AGILE_VIDEOS'), 'submenu AGILE VIDEOS link is not working'
 
     def test_header_resources_submenu_agilePresentation_redirect(self):
         resources_link = self.getResourcesLink()
-        agile_presentations_link = self.getSubmenuResources()[2]
         actions =chains(self.driver)
         actions.move_to_element(resources_link).perform()
+        agile_presentations_link = self.getSubmenuResources()[2]
         path = self.clickEvent(agile_presentations_link)
         assert path == self.CONST.get('SUBMENU_AGILE_PRESENTATIONS'), 'submenu AGILE PRESENTATIONS link is not working'  
 
     def test_header_resources_submenu_agileTools_redirect(self):
         resources_link = self.getResourcesLink()
-        agile_tools_link = self.getSubmenuResources()[3]
         actions =chains(self.driver)
         actions.move_to_element(resources_link).perform()
+        agile_tools_link = self.getSubmenuResources()[3]
         path = self.clickEvent(agile_tools_link)
         assert path == self.CONST.get('SUBMENU_AGILE_TOOLS'), 'submenu AGILE TOOLS link is not working' 
     
