@@ -17,13 +17,12 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="class")
 def setup(request):
-    print("initiating chrome driver")
-    web_driver = webdriver.Chrome(options=chrome_options, executable_path=r'/var/lib/jenkins/workspace/Automation/chromedriver')
+    web_driver = webdriver.Chrome(options=chrome_options, executable_path=CONSTANTS['driverConfig'].get('PATH'))
     url_value = request.config.option.url
     if url_value is None:
         url_value = CONSTANTS['mainPage'].get('URL')
     web_driver.get(url_value)
     request.cls.driver = web_driver
-
+    
     yield web_driver
     web_driver.close()
