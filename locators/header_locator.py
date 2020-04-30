@@ -50,7 +50,7 @@ class HeaderLocator:
 
     def clickLink(self, element, page):
         element.click()
-        WebDriverWait(self.driver, 10).until(EC.url_to_be(page), message=f"Page timeout or is not loading {page}")
+        WebDriverWait(self.driver, 10).until(EC.url_to_be(page), message="Page timeout or is not loading {}".format(page))
         return self.driver.current_url
     
     def hover_on_link(self,main_element):
