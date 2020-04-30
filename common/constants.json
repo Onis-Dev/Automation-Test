@@ -1,4 +1,7 @@
 {
+    "driverConfig":{
+        "PATH": "/var/lib/jenkins/workspace/Automation/chromedriver"
+    },
     "mainPage":{
         "URL":"https://smoothapps.com/"
     },
