@@ -14,8 +14,9 @@ class TestHome:
 
     CONST = CONSTANTS['HOME']
 
-    def test_learn_more_redirect(self):
+    def test_learn_more_redirect(self, get_base_url):
         learn_more_btn = HomeLocator.getLearnMoreBtn(self)
         assert Utils.is_displayed(self,learn_more_btn), 'Learn More button is being displayed'
-        path = Utils.clickLink(self, learn_more_btn, self.CONST.get('LEARN_MORE_REDIRECT'))
-        assert path == self.CONST.get('LEARN_MORE_REDIRECT'), 'LEARN MORE REDIRECT is not working'
+        learn_more_path = get_base_url + self.CONST.get('LEARN_MORE_REDIRECT')
+        path = Utils.clickLink(self, learn_more_btn, learn_more_path)
+        assert path == learn_more_path, 'LEARN MORE REDIRECT is not working'
