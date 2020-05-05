@@ -2,12 +2,9 @@
     "driverConfig":{
         "PATH": "/var/lib/jenkins/workspace/Automation/chromedriver"
     },
-    "mainPage":{
-        "URL":"https://smoothapps.com/"
-    },
     "topHeader":{
         "CONTACTUS": "| Contact Us |",
-        "CONTACTUS_LINK": "https://smoothapps.com/index.php/contact-us/",
+        "CONTACTUS_LINK": "index.php/contact-us/",
         "PHONE": "214-785-5570",
         "EMAIL": "info@smoothapps.com"
     },
@@ -15,24 +12,23 @@
         "COPYRIGHT": "Copyright \u00a92015-2017 SmoothApps. All Rights Reserved."
     },
     "header":{
-        "HOME_LINK": "https://smoothapps.com/",
-        "TRAINING_LINK": "https://smoothapps.com/index.php/training/",
-        "SUBMENU_AGILEFRAMEWORK": "https://smoothapps.com/index.php/agile-frameworks/",
-        "SUBMENU_AGILEPRACTICES_TOOLS": "https://smoothapps.com/index.php/training/agile-practices-and-tools/",
-        "SUBMENU_AGILECULTURE": "https://smoothapps.com/index.php/training/agile-culture/",
-        "SERVICES_LINK": "https://smoothapps.com/index.php/services/",
-        "EVENTS_LINK":"https://smoothapps.com/index.php/upcoming-trainings/",
-        "SUBMENU_COMPANY": "https://smoothapps.com/index.php/about/company/",
-        "SUBMENU_PARTNERS": "https://smoothapps.com/index.php/about/partners/",
-        "SUBMENU_TESTIMONIALS": "https://smoothapps.com/index.php/about/testimonials/",
-        "SUBMENU_CAREERS": "https://smoothapps.com/index.php/careers/",
-        "SUBMENU_SCRUM_EVENTS": "https://smoothapps.com/index.php/scrum-framework/",
-        "SUBMENU_AGILE_VIDEOS": "https://smoothapps.com/index.php/resources/agilato/",
-        "SUBMENU_AGILE_PRESENTATIONS": "https://smoothapps.com/index.php/resources/presentations/",
-        "SUBMENU_AGILE_TOOLS": "https://smoothapps.com/index.php/resources/tools/",
-        "BLOG_LINK": "https://smoothapps.com/index.php/blog/"
+        "TRAINING_LINK": "index.php/training/",
+        "SUBMENU_AGILEFRAMEWORK": "index.php/agile-frameworks/",
+        "SUBMENU_AGILEPRACTICES_TOOLS": "index.php/training/agile-practices-and-tools/",
+        "SUBMENU_AGILECULTURE": "index.php/training/agile-culture/",
+        "SERVICES_LINK": "index.php/services/",
+        "EVENTS_LINK":"index.php/upcoming-trainings/",
+        "SUBMENU_COMPANY": "index.php/about/company/",
+        "SUBMENU_PARTNERS": "index.php/about/partners/",
+        "SUBMENU_TESTIMONIALS": "index.php/about/testimonials/",
+        "SUBMENU_CAREERS": "index.php/careers/",
+        "SUBMENU_SCRUM_EVENTS": "index.php/scrum-framework/",
+        "SUBMENU_AGILE_VIDEOS": "index.php/resources/agilato/",
+        "SUBMENU_AGILE_PRESENTATIONS": "index.php/resources/presentations/",
+        "SUBMENU_AGILE_TOOLS": "index.php/resources/tools/",
+        "BLOG_LINK": "index.php/blog/"
     },
     "HOME":{
-        "LEARN_MORE_REDIRECT": "https://smoothapps.com/index.php/about/company/#"
+        "LEARN_MORE_REDIRECT": "index.php/about/company/#"
     }
 }     
