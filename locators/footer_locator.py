@@ -4,22 +4,23 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from common.utils import Utils
 
 class FooterLocator:
     def getFacebookIcon(self):
-        return self.driver.find_element(By.XPATH, '//*[@id="footer-bottom"]/div/ul/li[1]/a')
+        return Utils.find_element_by_xpath(self, '//*[@id="footer-bottom"]/div/ul/li[1]/a')
 
     def getTwitterIcon(self):
-        return self.driver.find_element(By.XPATH,'//*[@id="footer-bottom"]/div/ul/li[2]/a')
+        return Utils.find_element_by_xpath(self,'//*[@id="footer-bottom"]/div/ul/li[2]/a')
 
     def getGoogleIcon(self):
-        return self.driver.find_element(By.XPATH,'//*[@id="footer-bottom"]/div/ul/li[3]/a')
+        return Utils.find_element_by_xpath(self,'//*[@id="footer-bottom"]/div/ul/li[3]/a')
 
     def getLinkedInIcon(self):
-        return self.driver.find_element(By.XPATH,'//*[@id="footer-bottom"]/div/ul/li[4]/a')
+        return Utils.find_element_by_xpath(self,'//*[@id="footer-bottom"]/div/ul/li[4]/a')
     
     def getRssIcon(self):
-        return self.driver.find_element(By.XPATH,'//*[@id="footer-bottom"]/div/ul/li[5]/a')
+        return Utils.find_element_by_xpath(self,'//*[@id="footer-bottom"]/div/ul/li[5]/a')
 
     def getCopyRight(self):
-        return self.driver.find_element(By.ID,'footer-info')
+        return Utils.find_element_by_id(self,'footer-info')
