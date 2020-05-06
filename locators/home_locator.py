@@ -7,42 +7,54 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains as chains
 from common.utils import Utils
 
+"""Class to get all elements from HOME section"""
 class HomeLocator:
     # Learn More
-    def getLearnMoreBtn(self):
+    """Get learn more button"""
+    def get_learn_more_btn(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[1]/div/div[2]/div[2]/a')
     #*****UPCOMING TRAININGS
     # PSPO
-    def getPspoLink(self):
+    """Get PSPO link element"""
+    def get_pspo_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[1]/div[1]/a')
 
-    def getPspoRegisterLink(self):
+    """Get PSPO button register element"""
+    def get_pspo_register_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[1]/div[5]/a')
 
     # PSM
-    def getPsmLink(self):
+    """Get PSM link element"""
+    def get_psm_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[1]/a')
 
-    def getPsmRegisterLink(self):
+    """Get PSM button register element"""
+    def get_psm_register_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[5]/a')
 
     # SPS
-    def getSpsLink(self):
+    """Get SPS link element"""
+    def get_sps_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[3]/div[1]/a')
 
-    def getSpsRegisterLink(self):
+    """Get SPS button register element"""
+    def get_sps_register_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[3]/div[5]/a')
 
     # PSMII
-    def getPsmiiLink(self):
+    """Get PSMII link element"""
+    def get_psmii_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[4]/div[1]/a')
 
-    def getPsmiiRegisterLink(self):
+    """Get PSMII button register element"""
+    def get_psmii_register_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[4]/div[5]/a')
 
     # EVIDENCE AGIL
-    def getEvidenceAgilLink(self):
+    """Get EVIDENCE AGIL link element"""
+    def get_evidence_agil_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[5]/div[1]/a')
 
-    def getEvidenceAgilRegisterLink(self):
+    """Get EVIDENCE AGIL button register element"""
+    def get_evidence_agil_register_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[5]/div[5]/a')

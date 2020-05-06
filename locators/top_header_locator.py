@@ -4,28 +4,30 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from common.utils import Utils
 
+"""Class to get all elements from Top Header section"""
 class TopHeaderLocator:
-    def getFacebookIcon(self):
+
+    """Get facebook icon element"""
+    def get_facebook_icon(self):
         return Utils.find_element_by_xpath(self,'//*[@id="et-secondary-menu"]/ul[1]/li[1]/a')
     
-    def getTwitterIcon(self):
+    """Get twitter icon element"""
+    def get_twitter_icon(self):
         return Utils.find_element_by_xpath(self,'//*[@id="et-secondary-menu"]/ul[1]/li[2]/a')
 
-    def getGoogleIcon(self):
+    """Get google icon element"""
+    def get_google_icon(self):
         return Utils.find_element_by_xpath(self,'//*[@id="et-secondary-menu"]/ul[1]/li[3]/a')
     
-    def getLinkedInIcon(self):
+    """Get linkedIn icon element"""
+    def get_linkedIn_icon(self):
         return Utils.find_element_by_xpath(self,'//*[@id="et-secondary-menu"]/ul[1]/li[4]/a')
 
-    def getRssIcon(self):
+    """Get rss icon element"""
+    def get_rss_icon(self):
         return Utils.find_element_by_xpath(self,'//*[@id="et-secondary-menu"]/ul[1]/li[5]/a')
 
-    def getContactUs(self):
+    """Get Contact link element"""
+    def get_contact_us(self):
         return Utils.find_element_by_css_selector(self, '#et-secondary-nav > li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-4912 > a')
-    
-    def getPhone(self):
-        return Utils.find_element_by_id(self,'et-info-phone')
-    
-    def getEmail(self):
-        return Utils.find_element_by_id(self,'et-info-email')
 
