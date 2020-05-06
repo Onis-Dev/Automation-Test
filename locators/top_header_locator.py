@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from common.utils import Utils
 
+"""Class to get all elements from Top Header section"""
 class TopHeaderLocator:
 
     """Get facebook icon element"""

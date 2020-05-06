@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains as chains
 from common.utils import Utils
 
-"""This class is to get all elements from Header section"""
+"""Class to get all elements from Header section"""
 class HeaderLocator:
 
     """Get Home link element"""
