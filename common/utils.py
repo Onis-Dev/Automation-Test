@@ -7,8 +7,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains as chains
 
 class Utils:
-    def clickLink(self, element, page):
+    def clickLink(self, element, page,external=False):
         element.click()
+        if external:
+            self.driver.switch_to.window(self.driver.window_handles[-1])
         WebDriverWait(self.driver, 10).until(EC.url_to_be(page),  message="Page is not loading or it produced a timeout trying to redirect {}".format(page))
         return self.driver.current_url
     

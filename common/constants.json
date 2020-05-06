@@ -29,6 +29,16 @@
         "BLOG_LINK": "index.php/blog/"
     },
     "HOME":{
-        "LEARN_MORE_REDIRECT": "index.php/about/company/#"
+        "LEARN_MORE_REDIRECT": "index.php/about/company/#",
+        "PSPO_LINK": "index.php/training/professional-scrum-product-owner-pspo/",
+        "PSPO_REGISTER_LINK": "https://www.eventbrite.com/e/professional-scrum-product-owner-tickets-77340139439",
+        "PSM_LINK": "index.php/training/professional-scrum-master/",
+        "PSM_REGISTER_LINK": "https://www.eventbrite.com/e/professional-scrum-master-tickets-77351060103",
+        "SPS_LINK": "index.php/training/scaled-professional-scrum-sps/",
+        "SPS_REGISTER_LINK": "https://www.eventbrite.com/e/scaled-professional-scrum-tickets-77356155343",
+        "PSMII_LINK": "index.php/training/psm-ii/",
+        "PSMII_REGISTER_LINK": "https://www.eventbrite.com/e/professional-scrum-master-ii-tickets-77247111189",
+        "EVIDENCE_AGIL_LINK": "index.php/training/agile-roi-for-executives",
+        "EVIDENCE_AGIL_REGISTER_LINK": "https://www.eventbrite.com/e/evidence-based-agility-tickets-77234678001"
     }
 }     
