@@ -7,46 +7,55 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains as chains
 from common.utils import Utils
 
+"""This class is to get all elements from Header section"""
 class HeaderLocator:
-    def getLogo(self):
-        return Utils.find_element_by_id(self,'logo')
-    
-    def getHomeLink(self):
+
+    """Get Home link element"""
+    def get_home_link(self):
         return Utils.find_element_by_id(self, 'menu-item-5121')
 
-    def getTrainingLink(self):
+    """Get Training link element"""
+    def get_training_link(self):
         return Utils.find_element_by_id(self, 'menu-item-7212')
 
-    def getSubmenuTraining(self):
+    """Get Training submenu elements"""
+    def get_submenu_training(self):
         return (Utils.find_element_by_id(self, 'menu-item-5151'),
                Utils.find_element_by_id(self, 'menu-item-8080'),
                Utils.find_element_by_id(self, 'menu-item-5152'))
     
-    def getServicesLink(self):
+    """Get Services link element"""
+    def get_services_link(self):
         return Utils.find_element_by_id(self, 'menu-item-5598')
 
-    def getEventslink(self):
+    """Get Events link element"""
+    def get_events_link(self):
         return Utils.find_element_by_id(self, 'menu-item-5174')
     
-    def getAboutLink(self):
+    """Get About link element"""
+    def get_about_link(self):
         return Utils.find_element_by_id(self, 'menu-item-5580')
     
-    def getSubmenuAbout(self):
+    """Get About Submenu elements"""
+    def get_submenu_about(self):
         return (Utils.find_element_by_id(self, 'menu-item-5168'),
                Utils.find_element_by_id(self, 'menu-item-5169'),
                Utils.find_element_by_id(self, 'menu-item-4706'),
                Utils.find_element_by_id(self, 'menu-item-7943'))
-        
-    def getResourcesLink(self):
+    
+    """Get Resources link element"""
+    def get_resources_link(self):
         return Utils.find_element_by_id(self, 'menu-item-5581')
     
-    def getSubmenuResources(self):
+    """Get Resources Submenu elements"""
+    def get_submenu_resources(self):
         return (Utils.find_element_by_id(self, 'menu-item-7771'),
                Utils.find_element_by_id(self, 'menu-item-5171'),
                Utils.find_element_by_id(self, 'menu-item-5176'),
                Utils.find_element_by_id(self, 'menu-item-5172'))
 
-    def getBlogLink(self):
+    """Get Blog link element"""
+    def get_blog_link(self):
         return Utils.find_element_by_id(self, 'menu-item-5173')
 
 

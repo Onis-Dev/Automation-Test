@@ -18,5 +18,5 @@ class TestHome:
         learn_more_btn = HomeLocator.getLearnMoreBtn(self)
         assert Utils.is_displayed(self,learn_more_btn), 'Learn More button is being displayed'
         learn_more_path = get_base_url + self.CONST.get('LEARN_MORE_REDIRECT')
-        path = Utils.clickLink(self, learn_more_btn, learn_more_path)
+        path = Utils.click_link(self, learn_more_btn, learn_more_path)
         assert path == learn_more_path, 'LEARN MORE REDIRECT is not working'
