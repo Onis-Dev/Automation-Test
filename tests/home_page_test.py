@@ -130,20 +130,20 @@ class TestHome:
         assert path == psmii_link_url, 'PSMII LINK is not working'
 
 
-    @allure.title("Test PSMII REGISTER  button redirect is displayed and working") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.home_psmii_register_link
-    def test_home_psmii_register_link(self, get_base_url):
-        self.driver.get(get_base_url)
-        psmii_register_link = HomeLocator.get_psmii_register_btn(self)
-        psmii_register_link_url = self.CONST.get('PSMII_REGISTER_LINK')
-        psmii_register_title = self.TITLES.get('PSMII_REGISTER_TITLE')
-        assert Utils.is_displayed(self,psmii_register_link), 'PSMII REGISTER button is not being displayed'
-        path = Utils.click_link(self,psmii_register_link, psmii_register_title, psmii_register_link_url,True)
-        self.driver.close()
-        self.driver.switch_to.window(self.driver.window_handles[0]) 
-        assert path == psmii_register_link_url, 'PSMII REGISTER Link is not working'
+    # @allure.title("Test PSMII REGISTER  button redirect is displayed and working") 
+    # @allure.description(" Test if link is displayed and redirect is correct")
+    # @allure.severity(allure.severity_level.CRITICAL)
+    # @pytest.mark.home_psmii_register_link
+    # def test_home_psmii_register_link(self, get_base_url):
+    #     self.driver.get(get_base_url)
+    #     psmii_register_link = HomeLocator.get_psmii_register_btn(self)
+    #     psmii_register_link_url = self.CONST.get('PSMII_REGISTER_LINK')
+    #     psmii_register_title = self.TITLES.get('PSMII_REGISTER_TITLE')
+    #     assert Utils.is_displayed(self,psmii_register_link), 'PSMII REGISTER button is not being displayed'
+    #     path = Utils.click_link(self,psmii_register_link, psmii_register_title, psmii_register_link_url,True)
+    #     self.driver.close()
+    #     self.driver.switch_to.window(self.driver.window_handles[0]) 
+    #     assert path == psmii_register_link_url, 'PSMII REGISTER Link is not working'
 
 
     @allure.title("Test EVIDENCE AGIL  button redirect is displayed and working") 
@@ -785,7 +785,7 @@ class TestHome:
     @allure.title("Test SCRUM PULSE WEBINAR REGISTER BUTTON redirect is displayed") 
     @allure.description(" Test if link is displayed and redirect is correct")
     @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.home_scrum_pulse_webinar_link
+    @pytest.mark.home_scrum_pulse_webinar_btn
     def test_home_scrum_pulse_webinar_link2(self, get_base_url):
         self.driver.get(get_base_url)
         scrum_pulse_webinar_link2 = HomeLocator.get_scrum_pulse_webinar_link2(self)

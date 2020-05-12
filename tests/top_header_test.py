@@ -12,8 +12,9 @@ from common.utils import Utils
 @pytest.mark.usefixtures("setup")
 class TestTopHeader:
 
-    CONST = CONSTANTS['topHeader']
-
+    CONST = CONSTANTS['TOP_HEADER']
+    TITLES = CONSTANTS['TITLES_PAGES']
+    
     @allure.title("Test social media icons")
     @allure.description(" Test if social media icons are displayed")
     @allure.severity(allure.severity_level.NORMAL)
@@ -39,5 +40,5 @@ class TestTopHeader:
         contactUs = TopHeaderLocator.get_contact_us(self)
         assert Utils.is_displayed(self,contactUs), 'contact us link is not being displayed'
         contactUs_path = get_base_url +  self.CONST.get('CONTACTUS_LINK')
-        path = Utils.click_link(self, contactUs, contactUs_path)
+        path = Utils.click_link(self, contactUs,self.TITLES.get('CONTACTUS_REGISTER_TITLE'), contactUs_path)
         assert path == contactUs_path, 'CONTACT US link is not working'

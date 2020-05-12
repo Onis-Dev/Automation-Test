@@ -18,9 +18,16 @@ class Utils:
         element.click()
         if external:
             self.driver.switch_to.window(self.driver.window_handles[-1])
-        WebDriverWait(self.driver, 10).until(EC.title_is(
-            title),  message="Page is not loading or it produced a timeout trying to redirect {}".format(page))
-        return self.driver.current_url
+        retry = 0
+        while retry < 5:
+            try:
+                WebDriverWait(self.driver, 10).until(EC.title_is(
+                    title),  message="Page produced a timeout trying to load {}".format(page))
+                return self.driver.current_url        
+            except:
+                retry += 1
+                print("RETRY ", retry)
+        return ""
 
     """ Function that performs a hover effect on a specific element. """
     def hover_on_link(self, main_element):
