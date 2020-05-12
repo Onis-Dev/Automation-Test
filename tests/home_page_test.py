@@ -43,20 +43,20 @@ class TestHome:
         assert path == pspo_link_url, 'PSPO_LINK is not working'
 
 
-    @allure.title("Test PSPO REGISTER button redirect is displayed and working") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.home_pspo_register_link
-    def test_home_pspo_register_link(self, get_base_url):
-        self.driver.get(get_base_url)
-        pspo_register_link = HomeLocator.get_pspo_register_btn(self)
-        pspo_register_link_url = self.CONST.get('PSPO_REGISTER_LINK')
-        pspo_register_title = self.TITLES.get('PSPO_REGISTER_TITLE')
-        assert Utils.is_displayed(self,pspo_register_link), 'PSPO REGISTER button is not being displayed'
-        path = Utils.click_link(self,pspo_register_link, pspo_register_title, pspo_register_link_url,True) 
-        self.driver.close()
-        self.driver.switch_to.window(self.driver.window_handles[0])
-        assert path == pspo_register_link_url, 'PSPO REGISTER Link is not working'
+    # @allure.title("Test PSPO REGISTER button redirect is displayed and working") 
+    # @allure.description(" Test if link is displayed and redirect is correct")
+    # @allure.severity(allure.severity_level.CRITICAL)
+    # @pytest.mark.home_pspo_register_link
+    # def test_home_pspo_register_link(self, get_base_url):
+    #     self.driver.get(get_base_url)
+    #     pspo_register_link = HomeLocator.get_pspo_register_btn(self)
+    #     pspo_register_link_url = self.CONST.get('PSPO_REGISTER_LINK')
+    #     pspo_register_title = self.TITLES.get('PSPO_REGISTER_TITLE')
+    #     assert Utils.is_displayed(self,pspo_register_link), 'PSPO REGISTER button is not being displayed'
+    #     path = Utils.click_link(self,pspo_register_link, pspo_register_title, pspo_register_link_url,True) 
+    #     self.driver.close()
+    #     self.driver.switch_to.window(self.driver.window_handles[0])
+    #     assert path == pspo_register_link_url, 'PSPO REGISTER Link is not working'
 
 
     @allure.title("Test PSM  link, redirect is displayed and working") 
@@ -64,6 +64,7 @@ class TestHome:
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_psm_link
     def test_home_psm_link(self, get_base_url):
+        self.driver.get(get_base_url)
         psm_link = HomeLocator.get_psm_link(self)
         psm_link_url = get_base_url + self.CONST.get('PSM_LINK')
         psm_title = self.TITLES.get('PSM_TITLE')
@@ -72,20 +73,20 @@ class TestHome:
         assert path == psm_link_url, 'PSM LINK is not working'
 
 
-    @allure.title("Test PSM REGISTER button redirect is displayed and working") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.home_psm_register_link
-    def test_home_psm_register_link(self, get_base_url):
-        self.driver.get(get_base_url)
-        psm_register_link = HomeLocator.get_psm_register_btn(self)
-        psm_register_link_url = self.CONST.get('PSM_REGISTER_LINK')
-        psm_register_title = self.TITLES.get('PSM_REGISTER_TITLE')
-        assert Utils.is_displayed(self,psm_register_link), 'PSM REGISTER button is not being displayed'
-        path = Utils.click_link(self,psm_register_link, psm_register_title, psm_register_link_url,True) 
-        self.driver.close()
-        self.driver.switch_to.window(self.driver.window_handles[0])
-        assert path == psm_register_link_url, 'PSM REGISTER Link is not working'
+    # @allure.title("Test PSM REGISTER button redirect is displayed and working") 
+    # @allure.description(" Test if link is displayed and redirect is correct")
+    # @allure.severity(allure.severity_level.CRITICAL)
+    # @pytest.mark.home_psm_register_link
+    # def test_home_psm_register_link(self, get_base_url):
+    #     self.driver.get(get_base_url)
+    #     psm_register_link = HomeLocator.get_psm_register_btn(self)
+    #     psm_register_link_url = self.CONST.get('PSM_REGISTER_LINK')
+    #     psm_register_title = self.TITLES.get('PSM_REGISTER_TITLE')
+    #     assert Utils.is_displayed(self,psm_register_link), 'PSM REGISTER button is not being displayed'
+    #     path = Utils.click_link(self,psm_register_link, psm_register_title, psm_register_link_url,True) 
+    #     self.driver.close()
+    #     self.driver.switch_to.window(self.driver.window_handles[0])
+    #     assert path == psm_register_link_url, 'PSM REGISTER Link is not working'
 
 
     @allure.title("Test SPS link redirect is displayed and working") 
@@ -93,6 +94,7 @@ class TestHome:
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_sps_link
     def test_home_sps_link(self, get_base_url):
+        self.driver.get(get_base_url)
         sps_link = HomeLocator.get_sps_link(self)
         sps_link_url = get_base_url + self.CONST.get('SPS_LINK')
         sps_title = self.TITLES.get('SPS_TITLE')
@@ -101,20 +103,20 @@ class TestHome:
         assert path == sps_link_url, 'SPS LINK is not working'
 
 
-    @allure.title("Test SPS REGISTER button redirect is displayed and working") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.home_sps_register_link
-    def test_home_sps_register_link(self, get_base_url):
-        self.driver.get(get_base_url)
-        sps_register_link = HomeLocator.get_sps_register_btn(self)
-        sps_register_link_url = self.CONST.get('SPS_REGISTER_LINK')
-        sps_register_title = self.TITLES.get('SPS_REGISTER_TITLE')
-        assert Utils.is_displayed(self,sps_register_link), 'SPS REGISTER button is not being displayed'
-        path = Utils.click_link(self,sps_register_link, sps_register_title, sps_register_link_url,True) 
-        self.driver.close()
-        self.driver.switch_to.window(self.driver.window_handles[0])
-        assert path == sps_register_link_url, 'SPS REGISTER Linkis not working'
+    # @allure.title("Test SPS REGISTER button redirect is displayed and working") 
+    # @allure.description(" Test if link is displayed and redirect is correct")
+    # @allure.severity(allure.severity_level.CRITICAL)
+    # @pytest.mark.home_sps_register_link
+    # def test_home_sps_register_link(self, get_base_url):
+    #     self.driver.get(get_base_url)
+    #     sps_register_link = HomeLocator.get_sps_register_btn(self)
+    #     sps_register_link_url = self.CONST.get('SPS_REGISTER_LINK')
+    #     sps_register_title = self.TITLES.get('SPS_REGISTER_TITLE')
+    #     assert Utils.is_displayed(self,sps_register_link), 'SPS REGISTER button is not being displayed'
+    #     path = Utils.click_link(self,sps_register_link, sps_register_title, sps_register_link_url,True) 
+    #     self.driver.close()
+    #     self.driver.switch_to.window(self.driver.window_handles[0])
+    #     assert path == sps_register_link_url, 'SPS REGISTER Linkis not working'
 
 
     @allure.title("Test PSMII  button redirect is displayed and working") 
@@ -122,6 +124,7 @@ class TestHome:
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_psmii_link
     def test_home_psmii_link(self, get_base_url):
+        self.driver.get(get_base_url)
         psmii_link = HomeLocator.get_psmii_link(self)
         psmii_link_url = get_base_url + self.CONST.get('PSMII_LINK')
         psmii_title = self.TITLES.get('PSMII_TITLE')
@@ -151,6 +154,7 @@ class TestHome:
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_evidenceagil_link
     def test_home_evidenceagil_link(self, get_base_url):
+        self.driver.get(get_base_url)
         evidenceagil_link = HomeLocator.get_evidence_agil_link(self)
         evidenceagil_link_url = get_base_url + self.CONST.get('EVIDENCE_AGIL_LINK')
         evidence_agil_title = self.TITLES.get('EVIDENCE_AGIL_TITLE')
@@ -159,20 +163,20 @@ class TestHome:
         assert path == evidenceagil_link_url, 'EVIDENCEAGIL Link is not working'
 
 
-    @allure.title("Test EVIDENCE AGIL REGISTER button redirect is displayed and working") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.home_evidenceagil_register_link
-    def test_home_evidenceagil_register_link(self, get_base_url):
-        self.driver.get(get_base_url)
-        evidenceagil_register_link = HomeLocator.get_evidence_agil_register_btn(self)
-        evidenceagil_register_link_url = self.CONST.get('EVIDENCE_AGIL_REGISTER_LINK')
-        evidence_agil_register_title = self.TITLES.get('EVIDENCE_AGIL_REGISTER_TITLE')
-        assert Utils.is_displayed(self,evidenceagil_register_link), 'EVIDENCEAGIL REGISTER button is not being displayed'
-        path = Utils.click_link(self,evidenceagil_register_link, evidence_agil_register_title, evidenceagil_register_link_url,True) 
-        self.driver.close()
-        self.driver.switch_to.window(self.driver.window_handles[0])
-        assert path == evidenceagil_register_link_url, 'EVIDENCEAGIL REGISTER Link is not working'
+    # @allure.title("Test EVIDENCE AGIL REGISTER button redirect is displayed and working") 
+    # @allure.description(" Test if link is displayed and redirect is correct")
+    # @allure.severity(allure.severity_level.CRITICAL)
+    # @pytest.mark.home_evidenceagil_register_link
+    # def test_home_evidenceagil_register_link(self, get_base_url):
+    #     self.driver.get(get_base_url)
+    #     evidenceagil_register_link = HomeLocator.get_evidence_agil_register_btn(self)
+    #     evidenceagil_register_link_url = self.CONST.get('EVIDENCE_AGIL_REGISTER_LINK')
+    #     evidence_agil_register_title = self.TITLES.get('EVIDENCE_AGIL_REGISTER_TITLE')
+    #     assert Utils.is_displayed(self,evidenceagil_register_link), 'EVIDENCEAGIL REGISTER button is not being displayed'
+    #     path = Utils.click_link(self,evidenceagil_register_link, evidence_agil_register_title, evidenceagil_register_link_url,True) 
+    #     self.driver.close()
+    #     self.driver.switch_to.window(self.driver.window_handles[0])
+    #     assert path == evidenceagil_register_link_url, 'EVIDENCEAGIL REGISTER Link is not working'
 
 
     #TRAINING CATALOGUE SECTION
@@ -181,6 +185,7 @@ class TestHome:
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_request_custom_training_btn
     def test_home_request_custom_training_btn(self, get_base_url):
+        self.driver.get(get_base_url)
         request_custom_training_btn = HomeLocator.get_request_custom_training_btn(self)
         request_custom_training_btn_url = get_base_url + self.CONST.get('CONTACTUS_REGISTER_BTN')
         contactus_register_title = self.TITLES.get('CONTACTUS_REGISTER_TITLE')
@@ -766,20 +771,20 @@ class TestHome:
     #     self.driver.switch_to.window(self.driver.window_handles[0])
     #     assert path == agile_devops_meetup_register_btn_url, 'AGILE DEVOPS MEETUP REGISTER Link is not working'
 
-    @allure.title("Test SCRUM PULSE WEBINAR LINK redirect is displayed and working") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.home_scrum_pulse_webinar_link
-    def test_home_scrum_pulse_webinar_link(self, get_base_url):
-        self.driver.get(get_base_url)
-        scrum_pulse_webinar_link = HomeLocator.get_scrum_pulse_webinar_link(self)
-        scrum_pulse_webinar_link_url = self.CONST.get('SCRUM_PULSE_WEBINAR_LINK')
-        scrum_pulse_webinar_title = self.TITLES.get('SCRUM_PULSE_WEBINAR_TITLE')
-        assert Utils.is_displayed(self,scrum_pulse_webinar_link), 'SCRUM PULSE WEBINAR LINK is not being displayed'
-        path = Utils.click_link(self,scrum_pulse_webinar_link, scrum_pulse_webinar_title, scrum_pulse_webinar_link_url,True) 
-        self.driver.close()
-        self.driver.switch_to.window(self.driver.window_handles[0])
-        assert path == scrum_pulse_webinar_link_url, 'SCRUM PULSE WEBINAR Link is not working'
+    # @allure.title("Test SCRUM PULSE WEBINAR LINK redirect is displayed and working") 
+    # @allure.description(" Test if link is displayed and redirect is correct")
+    # @allure.severity(allure.severity_level.CRITICAL)
+    # @pytest.mark.home_scrum_pulse_webinar_link
+    # def test_home_scrum_pulse_webinar_link(self, get_base_url):
+    #     self.driver.get(get_base_url)
+    #     scrum_pulse_webinar_link = HomeLocator.get_scrum_pulse_webinar_link(self)
+    #     scrum_pulse_webinar_link_url = self.CONST.get('SCRUM_PULSE_WEBINAR_LINK')
+    #     scrum_pulse_webinar_title = self.TITLES.get('SCRUM_PULSE_WEBINAR_TITLE')
+    #     assert Utils.is_displayed(self,scrum_pulse_webinar_link), 'SCRUM PULSE WEBINAR LINK is not being displayed'
+    #     path = Utils.click_link(self,scrum_pulse_webinar_link, scrum_pulse_webinar_title, scrum_pulse_webinar_link_url,True) 
+    #     self.driver.close()
+    #     self.driver.switch_to.window(self.driver.window_handles[0])
+    #     assert path == scrum_pulse_webinar_link_url, 'SCRUM PULSE WEBINAR Link is not working'
         
         
     @allure.title("Test SCRUM PULSE WEBINAR REGISTER BUTTON redirect is displayed") 

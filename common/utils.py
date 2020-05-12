@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains as chains
+from time import sleep
 
 """ This class contains all shared methods that can be used in all tests """
 class Utils:
@@ -16,18 +17,13 @@ class Utils:
     """
     def click_link(self, element, title, page, external=False):
         element.click()
+        sleep(1)
         if external:
             self.driver.switch_to.window(self.driver.window_handles[-1])
-        retry = 0
-        while retry < 5:
-            try:
-                WebDriverWait(self.driver, 10).until(EC.title_is(
-                    title),  message="Page produced a timeout trying to load {}".format(page))
-                return self.driver.current_url        
-            except:
-                retry += 1
-                print("RETRY ", retry)
-        return ""
+        WebDriverWait(self.driver, 30).until(EC.title_is(
+            title),  message="Page produced a timeout trying to load {}".format(page))
+        return self.driver.current_url        
+
 
     """ Function that performs a hover effect on a specific element. """
     def hover_on_link(self, main_element):
