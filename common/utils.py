@@ -14,12 +14,12 @@ class Utils:
         then returns the actual URL.
         (this function is used in elements that need to redirect).
     """
-    def click_link(self, element, page, external=False):
+    def click_link(self, element, title, page, external=False):
         element.click()
         if external:
             self.driver.switch_to.window(self.driver.window_handles[-1])
-        WebDriverWait(self.driver, 10).until(EC.url_to_be(
-            page),  message="Page is not loading or it produced a timeout trying to redirect {}".format(page))
+        WebDriverWait(self.driver, 10).until(EC.title_is(
+            title),  message="Page is not loading or it produced a timeout trying to redirect {}".format(page))
         return self.driver.current_url
 
     """ Function that performs a hover effect on a specific element. """
