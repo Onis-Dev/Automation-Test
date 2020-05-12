@@ -2,16 +2,13 @@
     "driverConfig":{
         "PATH": "/var/lib/jenkins/workspace/Automation/chromedriver"
     },
-    "topHeader":{
+    "TOP_HEADER":{
         "CONTACTUS": "| Contact Us |",
         "CONTACTUS_LINK": "index.php/contact-us/",
         "PHONE": "214-785-5570",
         "EMAIL": "info@smoothapps.com"
     },
-    "footer":{
-        "COPYRIGHT": "Copyright \u00a92015-2017 SmoothApps. All Rights Reserved."
-    },
-    "header":{
+    "HEADER":{
         "TRAINING_LINK": "index.php/training/",
         "SUBMENU_AGILEFRAMEWORK": "index.php/agile-frameworks/",
         "SUBMENU_AGILEPRACTICES_TOOLS": "index.php/training/agile-practices-and-tools/",
@@ -44,7 +41,7 @@
         "VIEW_ALL_UPCOMING_TRAININGS_BTN": "index.php/upcoming-trainings/",
         "INTRO_TO_AGILE_LINK": "index.php/training/intro-to-agile",
         "PSF_LINK": "index.php/training/professional-scrum-foundations/",
-        "PSD_LINK": "staging/training/professional-scrum-developer-psd/",
+        "PSD_LINK": "index.php/training/professional-scrum-developer-psd/",
         "PAL_E_LINK": "index.php/training/pal-e/",
         "KANBA_SYSTEM_DESIGN_LINK": "index.php/training/kanban-system-design-kmp-i/",
         "KANBA_MANAGEMENT_PROF_LINK": "index.php/training/kanban-management-professional-kmp-ii",
@@ -65,6 +62,7 @@
         "SCRUM_PULSE_WEBINAR_LINK": "https://www.scrum.org/resources/webcasts"	
     },
     "TITLES_PAGES":{
+        "HOME_TITLE": "SmoothApps | Stronger Teams. Better I.T.",
         "LEARN_MORE_TITLE": "About Company | SmoothApps",
         "CONTACTUS_REGISTER_TITLE": "Contact Us | SmoothApps",
         "VIEW_ALL_UPCOMING_TRAININGS_TITLE": "Upcoming Events | SmoothApps",
@@ -88,6 +86,8 @@
         "PSK_TITLE": "PROFESSIONAL SCRUM WITH KANBAN TRAINING | SmoothApps",
         "M3_0_TITLE": "Agile Management | SmoothApps",
         "PSU_TITLE": "PSU | SmoothApps",
+        "TRAINING_TITLE": "Training | SmoothApps",
+        "AGILE_FRAMEWORK_TITLE": "Agile Frameworks | SmoothApps",
         "AGILE_PRACTICES_AND_TOOLS_TITLE": "Agile Practices and Tools | SmoothApps",
         "BDD_TITLE": "Behavior Driven Development (BDD) | SmoothApps",
         "AGILE_TESTING_WORKSHOP_TITLE": "Agile Testing Workshop | SmoothApps",
@@ -98,6 +98,16 @@
         "AGILE_CHANGE_TITLE": "Agile Change | SmoothApps",
         "AGILE_DEVOPS_MEETUP_TITLE": "Agile-DevOps: DFW Chapter (Plano, TX) | Meetup",
         "AGILE_DEVOPS_MEETUP_REGISTER_TITLE": "Webinar: Evidence-Based Agility for Audacious Goals | Meetup",
-        "SCRUM_PULSE_WEBINAR_TITLE": "Webcasts | Scrum.org"
+        "SCRUM_PULSE_WEBINAR_TITLE": "Webcasts | Scrum.org",
+        "SERVICES_TITLE": "Services | SmoothApps",
+        "EVENTS_TITLE": "Upcoming Events | SmoothApps",
+        "ABOUT_PARTNERS_TITLE": "Partners | SmoothApps",
+        "ABOUT_TESTIMONIALS_TITLE": "Testimonials | SmoothApps",
+        "ABOUT_CAREERS_TITLE": "Careers | SmoothApps",
+        "RESOURCES_SCRUM_EVENTS_TITLE": "Scrum Framework | SmoothApps",
+        "RESOURCES_AGILE_VIDEOS_TITLE": "Videos | SmoothApps",
+        "RESOURCES_AGILE_PRESENTATIONS_TITLE": "Presentations | SmoothApps",
+        "RESOURCES_AGILE_TOOLS_TITLE": "Templates | SmoothApps",
+        "BLOG_TITLE": "Blog | SmoothApps"
     }
 }     
