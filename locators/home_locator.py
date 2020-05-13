@@ -311,4 +311,49 @@ class HomeLocator:
     """Get agile presentations image link element"""
     def get_agile_presentations_image_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[9]/div[2]/div[2]/div[2]/a/img')
+
+    #AGILE PARTNERSR
+    """Get AGILE PARTNERSR link emement"""		
+    def get_agile_partners_link(self):
+        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[11]/div[1]/div/div/h1/a')
+
+    """Get READ MORE RAVI VERMA emement"""		
+    def get_read_more_ravi_btn(self):
+        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[11]/div[2]/div/div[1]/div/div[2]/div/a')
+
+    """Get READ MORE MARK NONEMAN emement"""		
+    def get_read_more_mark_btn(self):
+        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[11]/div[2]/div/div[2]/div/div[2]/div/a')
+        
+    """Get READ MORE CHARLES BRADLEY emement"""		
+    def get_read_more_charles_b_btn(self):
+        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[11]/div[2]/div/div[3]/div/div[2]/div/a')
+
+    """Get READ MORE CHARLES SUSCHECK emement"""		
+    def get_read_more_charles_s_btn(self):
+        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[11]/div[2]/div/div[4]/div/div[2]/div/a')
+
+    """Get READ MORE HIREN emement"""		
+    def get_read_more_hiren_btn(self):
+        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[11]/div[2]/div/div[5]/div/div[2]/div/a')
+
+    """Get READ MORE RICH VISOTCKY emement"""		
+    def get_read_more_rich_btn(self):
+        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[11]/div[3]/div/div[1]/div/div[2]/div/a')
+
+    """Get READ MORE JULEE emement"""		
+    def get_read_more_julee_btn(self):
+        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[11]/div[3]/div/div[2]/div/div[2]/div/a')
+
+    """Get READ MORE MAGDALENA emement"""		
+    def get_read_more_magdalena_btn(self):
+        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[11]/div[3]/div/div[3]/div/div[2]/div/a')
+
+    """Get READ MORE JILL emement"""		
+    def get_read_more_jill_btn(self):
+        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[11]/div[3]/div/div[4]/div/div[2]/div/a')
+
+    """Get READ MORE NAGESH emement"""		
+    def get_read_more_nagesh_btn(self):
+        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[11]/div[3]/div/div[5]/div/div[2]/div/a')
     
