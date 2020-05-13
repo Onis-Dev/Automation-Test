@@ -116,7 +116,7 @@ class TestPartners:
     @allure.title("Test READ MORE NAGESH BUTTON is displayed") 
     @allure.description(" Test if button is displayed")
     @allure.severity(allure.severity_level.BLOCKER)
-    @pytest.mark.read_more_nagesh_btn
+    @pytest.mark.home_read_more_nagesh_btn
     def test_read_more_nagesh_btn(self, get_base_url):
         read_more_nagesh_btn = HomeLocator.get_read_more_nagesh_btn(self)
         assert Utils.is_displayed(self,read_more_nagesh_btn), 'READ MORE NAGESH BUTTON is not being displayed'
