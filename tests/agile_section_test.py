@@ -18,7 +18,7 @@ class TestAgileSection:
 
     #AGILE PRACTICES AND TOOLS
        
-    @allure.title("Test AGILE PRACTICES AND TOOLS LINK redirect is displayed and working") 
+    @allure.title("Test AGILE PRACTICES AND TOOLS LINK is displayed and working") 
     @allure.description(" Test if link is displayed and redirect is correct")
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_agile_practices_and_tools_link
@@ -31,7 +31,7 @@ class TestAgileSection:
         assert path == agile_practices_and_tools_link_url, 'AGILE PRACTICES AND TOOLS LINK is not working'
         
         
-    @allure.title("Test BEHAVIOR DRIVEN DEVELOPMENT LINK redirect is displayed and working") 
+    @allure.title("Test BEHAVIOR DRIVEN DEVELOPMENT LINK is displayed and working") 
     @allure.description(" Test if link is displayed and redirect is correct")
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_bdd_link
@@ -45,9 +45,9 @@ class TestAgileSection:
         assert path == bdd_link_url, 'BEHAVIOR DRIVEN DEVELOPMENT LINK is not working'
         
         
-    @allure.title("Test BDD REGISTER BUTTON redirect is displayed") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title("Test BDD REQUEST BUTTON is displayed") 
+    @allure.description(" Test if button is displayed")
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.home_request_bdd_btn
     def test_home_request_bdd_btn(self, get_base_url):
         self.driver.get(get_base_url)
@@ -55,7 +55,7 @@ class TestAgileSection:
         assert Utils.is_displayed(self,request_bdd_btn), 'BDD REGISTER BUTTON  is not being displayed'
 
 
-    @allure.title("Test AGILE TESTING WORKSHOP LINK redirect is displayed and working") 
+    @allure.title("Test AGILE TESTING WORKSHOP LINK is displayed and working") 
     @allure.description(" Test if link is displayed and redirect is correct")
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_agile_testing_workshop_link
@@ -68,9 +68,9 @@ class TestAgileSection:
         assert path == agile_testing_workshop_link_url, 'AGILE TESTING WORKSHOP LINK is not working'
         
         
-    @allure.title("Test AGILE TESTING WORKSHOP REGISTER BUTTON redirect is displayed") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title("Test AGILE TESTING WORKSHOP REQUEST BUTTON is displayed") 
+    @allure.description(" Test if button is displayed")
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.home_request_agiltesting_btn
     def test_home_request_agiltesting_btn(self, get_base_url):
         self.driver.get(get_base_url)
@@ -79,7 +79,7 @@ class TestAgileSection:
        
     #AGILE CULTURE
        
-    @allure.title("Test AGILE CULTURE LINK redirect is displayed and working") 
+    @allure.title("Test AGILE CULTURE LINK is displayed and working") 
     @allure.description(" Test if link is displayed and redirect is correct")
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_agile_culture_link
@@ -92,7 +92,7 @@ class TestAgileSection:
         assert path == agile_culture_link_url, 'AGILE CULTURE LINK is not working'
         
         
-    @allure.title("Test AGILE DIVERSITY LINK redirect is displayed and working") 
+    @allure.title("Test AGILE DIVERSITY LINK is displayed and working") 
     @allure.description(" Test if link is displayed and redirect is correct")
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_agile_diversity_link
@@ -106,9 +106,9 @@ class TestAgileSection:
         assert path == agile_diversity_link_url, 'AGILE DIVERSITY LINK is not working'
         
         
-    @allure.title("Test AGILE DIVERSITY REGISTER BUTTON redirect is displayed") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title("Test AGILE DIVERSITY REQUEST BUTTON is displayed") 
+    @allure.description(" Test if button is displayed")
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.home_request_agildiverity_btn
     def test_home_request_agildiverity_btn(self, get_base_url):
         self.driver.get(get_base_url)
@@ -116,7 +116,7 @@ class TestAgileSection:
         assert Utils.is_displayed(self,request_agildiverity_btn), 'AGILE DIVERSITY REGISTER is not being displayed'
        
        
-    @allure.title("Test AGILE CONFLICT LINK redirect is displayed and working") 
+    @allure.title("Test AGILE CONFLICT LINK is displayed and working") 
     @allure.description(" Test if link is displayed and redirect is correct")
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_agile_conflict_link
@@ -129,9 +129,9 @@ class TestAgileSection:
         assert path == agile_conflict_link_url, 'AGILE CONFLICT LINK is not working'
         
         
-    @allure.title("Test AGILE CONFLICT REGISTER BUTTON redirect is displayed") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title("Test AGILE CONFLICT REQUEST BUTTON is displayed") 
+    @allure.description(" Test if button is displayed")
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.home_request_agilconflict_btn
     def test_home_request_agilconflict_btn(self, get_base_url):
         self.driver.get(get_base_url)
@@ -139,7 +139,7 @@ class TestAgileSection:
         assert Utils.is_displayed(self,request_agilconflict_btn), 'AGILE CONFLICT REGISTER is not being displayed'
         
         
-    @allure.title("Test AGILE MOTIVATION LINK redirect is displayed and working") 
+    @allure.title("Test AGILE MOTIVATION LINK is displayed and working") 
     @allure.description(" Test if link is displayed and redirect is correct")
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_agile_motivation_link
@@ -152,17 +152,17 @@ class TestAgileSection:
         assert path == agile_motivation_link_url, 'AGILE MOTIVATION LINK is not working'
         
         
-    @allure.title("Test AGILE MOTIVATION REGISTER BUTTON redirect is displayed") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title("Test AGILE MOTIVATION REQUEST BUTTON is displayed") 
+    @allure.description(" Test if button is displayed")
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.home_request_agilmotivation_btn
     def test_home_request_agilmotivation_btn(self, get_base_url):
         self.driver.get(get_base_url)
         request_agilmotivation_btn = HomeLocator.get_request_agilmotivation_btn(self)  
-        assert Utils.is_displayed(self,request_agilmotivation_btn), 'AGILE MOTIVATION REGISTER BUTTON is not being displayed'
+        assert Utils.is_displayed(self,request_agilmotivation_btn), 'AGILE MOTIVATION REQUEST BUTTON is not being displayed'
         
         
-    @allure.title("Test AGILE CHANGE LINK redirect is displayed and working") 
+    @allure.title("Test AGILE CHANGE LINK is displayed and working") 
     @allure.description(" Test if link is displayed and redirect is correct")
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.home_agile_change_link
@@ -175,11 +175,11 @@ class TestAgileSection:
         assert path == agile_change_link_url, 'AGILE CHANGE LINK is not working'
         
         
-    @allure.title("Test AGILE CHANGE REGISTER BUTTON redirect is displayed") 
-    @allure.description(" Test if link is displayed and redirect is correct")
-    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title("Test AGILE CHANGE REQUEST BUTTON is displayed") 
+    @allure.description(" Test if button is displayed")
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.home_request_agilchanges_btn
     def test_home_request_agilchanges_btn(self, get_base_url):
         self.driver.get(get_base_url)
         request_agilchanges_btn = HomeLocator.get_request_agilchanges_btn(self)  
-        assert Utils.is_displayed(self,request_agilchanges_btn), 'AGILE CHANGE REGISTER BUTTON is not being displayed'
+        assert Utils.is_displayed(self,request_agilchanges_btn), 'AGILE CHANGE REQUEST BUTTON is not being displayed'  
