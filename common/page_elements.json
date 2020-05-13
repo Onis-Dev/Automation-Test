@@ -1,0 +1,11 @@
+{
+    "HOME":{
+        "LEARN_MORE_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[1]/div/div[2]/div[2]/a",
+        "PSPO_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[1]/div[1]/a",
+        "PSPO_REGISTER_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[1]/div[5]/a",
+        "PSM_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[1]/a",
+        "PSM_REGISTER_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[5]/a",
+        "SPS_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[3]/div[1]/a",
+        "SPS_REGISTER_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[3]/div[5]/a"
+    }
+}
