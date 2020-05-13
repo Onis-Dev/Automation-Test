@@ -11,7 +11,7 @@ from common.utils import Utils
 
 
 @pytest.mark.usefixtures("setup")
-class TestAgileEvents:
+class TestEvents:
 
     CONST = CONSTANTS['HOME']
     TITLES = CONSTANTS['TITLES_PAGES']
