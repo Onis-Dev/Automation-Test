@@ -59,7 +59,8 @@
         "AGILE_CHANGE_LINK": "index.php/training/agile-culture/agile-change/",
         "AGILE_DEVOPS_MEETUP_LINK": "https://www.meetup.com/Agile-Inspiration-DFW-Chapter/",
         "AGILE_DEVOPS_MEETUP_REGISTER_BTN": "https://www.meetup.com/Agile-Inspiration-DFW-Chapter/events/gpdgnrybchbkb/",
-        "SCRUM_PULSE_WEBINAR_LINK": "https://www.scrum.org/resources/webcasts"	
+        "SCRUM_PULSE_WEBINAR_LINK": "https://www.scrum.org/resources/webcasts",
+        "AGILE_PRESENTATIONS": "index.php/resources/presentations"
     },
     "TITLES_PAGES":{
         "HOME_TITLE": "SmoothApps | Stronger Teams. Better I.T.",
@@ -68,7 +69,7 @@
         "VIEW_ALL_UPCOMING_TRAININGS_TITLE": "Upcoming Events | SmoothApps",
         "INTRO_TO_AGILE_TITLE": "Intro to Agile | SmoothApps",
         "PSF_TITLE": "Professional Scrum Foundations (PSF) | SmoothApps",
-        "PSD_TITLE": "",
+        "PSD_TITLE": "Professional Scrum Developer (PSD) | SmoothApps",
         "PSM_TITLE": "Professional Scrum Master (PSM) | SmoothApps",
         "PSM_REGISTER_TITLE": "Professional Scrum Master Tickets, Thu, Aug 20, 2020 at 8:45 AM | Eventbrite",
         "PSMII_TITLE": "PSM II | SmoothApps",
