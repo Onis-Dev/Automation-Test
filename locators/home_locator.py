@@ -12,34 +12,34 @@ class HomeLocator:
     # Learn More
     """Get learn more button"""
     def get_learn_more_btn(self):
-        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[1]/div/div[2]/div[2]/a')
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('LEARN_MORE_BTN_XPATH'))
     #*****UPCOMING TRAININGS
     # PSPO
     """Get PSPO link element"""
     def get_pspo_link(self):
-        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[1]/div[1]/a')
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('PSPO_LINK_XPATH'))
 
     """Get PSPO button register element"""
     def get_pspo_register_btn(self):
-        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[1]/div[5]/a')
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('PSPO_REGISTER_BTN_XPATH'))
 
     # PSM
     """Get PSM link element"""
     def get_psm_link(self):
-        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[1]/a')
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('PSM_LINK_XPATH'))
 
     """Get PSM button register element"""
     def get_psm_register_btn(self):
-        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[5]/a')
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('PSM_REGISTER_BTN_XPATH'))
 
     # SPS
     """Get SPS link element"""
     def get_sps_link(self):
-        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[3]/div[1]/a')
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('SPS_LINK_XPATH'))
 
     """Get SPS button register element"""
     def get_sps_register_btn(self):
-        return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[3]/div[5]/a')
+        return Utils.find_element_by_xpath(self,  self.ELEMENTS.get('SPS_REGISTER_BTN_XPATH'))
 
     # PSMII
     """Get PSMII link element"""

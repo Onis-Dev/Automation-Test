@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from locators.home_locator import HomeLocator
-from common.environment import CONSTANTS
+from common.environment import CONSTANTS, PAGE_ELEMENTS
 from common.utils import Utils
 
 @pytest.mark.usefixtures("setup")
@@ -14,7 +14,8 @@ class TestHome:
 
     CONST = CONSTANTS['HOME']
     TITLES = CONSTANTS['TITLES_PAGES']
-    
+    ELEMENTS = PAGE_ELEMENTS['HOME']
+
    #LEARN MORE
     @allure.title("Test Learn More button redirect is displayed and working") 
     @allure.description(" Test if button is displayed and redirect is correct")
