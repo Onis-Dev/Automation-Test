@@ -280,27 +280,35 @@ class HomeLocator:
     def get_scrum_pulse_webinar_link2(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[7]/div[3]/div/div/div/ul/li/div[2]/div[2]/p[3]/a')
     
+    """Get agile gallery slider element"""
     def get_agile_gallery_slider(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[8]/div[2]/div[1]/div[2]')
 
+    """Get agile gallery slider titles"""
     def get_agile_gallery_slider_texts(self):
         return Utils.find_elements_by_css_selector(self,'//*[@id="post-39"]/div/div[8]/div[2]/div[1]/div[2]/div[1]','h2 a')
 
+    """Get agile gallery slider controls"""
     def get_agile_gallery_controllers(self):
         return Utils.find_elements_by_tag_name(self,'//*[@id="post-39"]/div/div[8]/div[2]/div[1]/div[2]/div[3]','a')
     
+    """Get agile blog slider element"""
     def get_agile_blog_slider(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[8]/div[2]/div[2]')
 
+    """Get agile blog slider titles"""
     def get_agile_blog_slider_texts(self):
         return Utils.find_elements_by_tag_name(self,'//*[@id="post-39"]/div/div[8]/div[2]/div[2]/div[2]/div[1]','h2')
 
+    """Get agile blog slider controls"""
     def get_agile_blog_controllers(self):
         return Utils.find_elements_by_tag_name(self,'//*[@id="post-39"]/div/div[8]/div[2]/div[2]/div[2]/div[3]','a')
 
+    """Get agile videos image link element"""
     def get_agile_videos_image_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[9]/div[2]/div[1]/div[2]/a/img')
     
+    """Get agile presentations image link element"""
     def get_agile_presentations_image_link(self):
         return Utils.find_element_by_xpath(self,'//*[@id="post-39"]/div/div[9]/div[2]/div[2]/div[2]/a/img')
     

@@ -155,6 +155,7 @@ class TestEvents:
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.home_agile_presentations_image_link
     def test_home_agile_presentations_image_link(self, get_base_url):
+        self.driver.get(get_base_url)
         image_link = HomeLocator.get_agile_presentations_image_link(self)
         image_link_url = get_base_url + self.CONST.get('AGILE_PRESENTATIONS')
         assert Utils.is_displayed(self,image_link), "AGILE PRESENTATIONS IMAGE is not being displayed"
