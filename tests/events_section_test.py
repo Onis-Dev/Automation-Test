@@ -15,6 +15,7 @@ class TestEvents:
 
     CONST = CONSTANTS['HOME']
     TITLES = CONSTANTS['TITLES_PAGES']
+    CONSTHEADER = CONSTANTS['HEADER']
 
     @allure.title("Test AGILE EVENTS LINK redirect is displayed") 
     @allure.description(" Test if link is displayed and redirect is correct")
@@ -97,3 +98,66 @@ class TestEvents:
         self.driver.get(get_base_url)
         scrum_pulse_webinar_link2 = HomeLocator.get_scrum_pulse_webinar_link2(self)
         assert Utils.is_displayed(self,scrum_pulse_webinar_link2), 'SCRUM PULSE WEBINAR REGISTER BUTTON is not being displayed'
+
+    
+    @allure.title("Test AGILE GALLERY SLIDER  button is displayed and working") 
+    @allure.description(" Test if AGILE GALLERY slider is working correctly")
+    @allure.severity(allure.severity_level.BLOCKER)
+    @pytest.mark.home_agile_gallery_slider
+    def test_home_agile_gallery_slider(self, get_base_url):
+        slider = HomeLocator.get_agile_gallery_slider(self)
+        assert Utils.is_displayed(self, slider), "slider content is not being displayed"
+        slider_titles = HomeLocator.get_agile_gallery_slider_texts(self)
+        sliderControl = HomeLocator.get_agile_gallery_controllers(self)
+        page_count = 0
+        has_text = True
+        while page_count < len(sliderControl):
+            sliderControl[page_count].click()
+            if slider_titles[page_count].get_attribute('text') == None or slider_titles[page_count].get_attribute('text') == "":
+                has_text = False
+                break
+            page_count += 1
+        assert has_text, "AGILE GALLERY SLIDER is not working correctly"
+
+    @allure.title("Test AGILE BLOG SLIDER  button is displayed and working") 
+    @allure.description(" Test if AGILE BLOG slider is working correctly")
+    @allure.severity(allure.severity_level.BLOCKER)
+    @pytest.mark.home_agile_blog_slider
+    def test_home_agile_blog_slider(self, get_base_url):
+        slider = HomeLocator.get_agile_blog_slider(self)
+        assert Utils.is_displayed(self, slider), "slider content is not being displayed"
+        slider_titles = HomeLocator.get_agile_blog_slider_texts(self)
+        sliderControl = HomeLocator.get_agile_blog_controllers(self)
+        page_count = 0
+        has_text = True
+        while page_count < len(sliderControl):
+            sliderControl[page_count].click()
+            if slider_titles[page_count].get_attribute('textContent') == None or slider_titles[page_count].get_attribute('textContent') == "":
+                has_text = False
+                break
+            page_count += 1
+        assert has_text, "AGILE BLOG SLIDER is not working correctly"
+
+
+    @allure.title("Test AGILE VIDEOS IMAGE LINK is displayed and working") 
+    @allure.description(" Test if AGILE VIDEOS IMAGE LINK is working correctly")
+    @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.home_agile_videos_image_link
+    def test_home_agile_videos_image_link(self, get_base_url):
+        image_link = HomeLocator.get_agile_videos_image_link(self)
+        image_link_url = get_base_url + self.CONSTHEADER.get('SUBMENU_AGILE_VIDEOS')
+        assert Utils.is_displayed(self,image_link), "AGILE VIDEOS IMAGE is not being displayed"
+        path = Utils.click_link(self,image_link, self.TITLES.get('RESOURCES_AGILE_VIDEOS_TITLE'), image_link_url) 
+        assert path == image_link_url, 'AGILE VIDEOS IMAGE LINK is not working'
+
+    @allure.title("Test AGILE PRESENTATIONS IMAGE LINK is displayed and working") 
+    @allure.description(" Test if AGILE PRESENTATIONS IMAGE LINK is working correctly")
+    @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.home_agile_presentations_image_link
+    def test_home_agile_presentations_image_link(self, get_base_url):
+        self.driver.get(get_base_url)
+        image_link = HomeLocator.get_agile_presentations_image_link(self)
+        image_link_url = get_base_url + self.CONST.get('AGILE_PRESENTATIONS')
+        assert Utils.is_displayed(self,image_link), "AGILE PRESENTATIONS IMAGE is not being displayed"
+        path = Utils.click_link(self,image_link, self.TITLES.get('RESOURCES_AGILE_PRESENTATIONS_TITLE'), image_link_url) 
+        assert path == image_link_url, 'AGILE PRESENTATIONS IMAGE LINK is not working'

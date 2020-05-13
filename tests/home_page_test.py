@@ -14,6 +14,7 @@ class TestHome:
 
     CONST = CONSTANTS['HOME']
     TITLES = CONSTANTS['TITLES_PAGES']
+    
    #LEARN MORE
     @allure.title("Test Learn More button redirect is displayed and working") 
     @allure.description(" Test if button is displayed and redirect is correct")
@@ -176,4 +177,6 @@ class TestHome:
     #     path = Utils.click_link(self,evidenceagil_register_link, evidence_agil_register_title, evidenceagil_register_link_url,True) 
     #     self.driver.close()
     #     self.driver.switch_to.window(self.driver.window_handles[0])
+    #     assert path == agile_devops_meetup_register_btn_url, 'AGILE DEVOPS MEETUP REGISTER Link is not working'
     #     assert path == evidenceagil_register_link_url, 'EVIDENCEAGIL REGISTER Link is not working'
+

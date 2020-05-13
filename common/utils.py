@@ -51,6 +51,18 @@ class Utils:
         except:
             return None
 
+    def find_elements_by_css_selector(self,locator,tag):
+        try:
+            return self.driver.find_element(By.XPATH, locator).find_elements(By.CSS_SELECTOR, tag)
+        except:
+            return None
+    
+    def find_elements_by_tag_name(self,locator,tag):
+        try:
+            return self.driver.find_element(By.XPATH, locator).find_elements(By.TAG_NAME, tag)
+        except:
+            return None
+
     """ verify if an element is displayed in the screen"""
     def is_displayed(self, element):
         return element.is_displayed() if element != None else False
