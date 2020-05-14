@@ -1,11 +1,127 @@
 {
     "HOME":{
         "LEARN_MORE_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[1]/div/div[2]/div[2]/a",
+
         "PSPO_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[1]/div[1]/a",
         "PSPO_REGISTER_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[1]/div[5]/a",
+        
         "PSM_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[1]/a",
         "PSM_REGISTER_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[5]/a",
+
         "SPS_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[3]/div[1]/a",
-        "SPS_REGISTER_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[3]/div[5]/a"
+        "SPS_REGISTER_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[3]/div[5]/a",
+
+        "PSMII_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[4]/div[1]/a",
+        "PSMII_REGISTER_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[4]/div[5]/a",
+
+        "EVIDENCE_AGILE_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[5]/div[1]/a",
+        "EVIDENCE_AGILE_REGISTER_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[5]/div[5]/a",
+
+        "REQUEST_CUSTOM_TRAINING_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[2]/div[1]/div/a",
+        "UPCOMING_TRAINING_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[2]/div[2]/div/a",
+
+        "INTRO_TO_AGILE_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[3]/div[1]/div/div/ul/li/div[2]/div/h2[3]/a",
+        "REQUEST_AGILE_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[3]/div[1]/div/div/ul/li/div[2]/div/p[3]/a",
+
+        "PSF_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[3]/div[2]/div[1]/div/ul/li/div[2]/div[2]/h2[4]/a",
+        "PSF_REQUEST_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[3]/div[2]/div[1]/div/ul/li/div[2]/div[2]/p[3]/a",
+
+        "PSD_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[3]/div[3]/div[1]/div/ul/li/div[2]/div[2]/h2[3]/a" ,
+        "PSD_REQUEST_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[3]/div[3]/div[1]/div/ul/li/div[2]/div[2]/p[3]/a",
+
+        "PSM_LINK2_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[3]/div[4]/div[1]/div/ul/li/div[2]/div[2]/h2[3]/a",
+        "PSM_REGISTER_BTN2_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[3]/div[4]/div[1]/div/ul/li/div[2]/div[2]/p[3]/a",
+
+        "PSMII_LINK2_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[4]/div[1]/div[2]/div/ul/li/div[2]/div[2]/h2[3]/a",
+        "PSMII_REGISTER_BTN2_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[4]/div[1]/div[2]/div/ul/li/div[2]/div[2]/p[3]/a",
+
+        "PSPO_LINK2_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[4]/div[2]/div[2]/div/ul/li/div[2]/div[2]/h2[3]/a",
+        "PSPO_REGISTER_BTN2_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[4]/div[2]/div[2]/div/ul/li/div[2]/div[2]/p[3]/a",
+
+        "SPS_LINK2_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[4]/div[3]/div[2]/div/ul/li/div[2]/div[2]/h2[3]/a",
+        "SPS_REGISTER_BTN2_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[4]/div[3]/div[2]/div/ul/li/div[2]/div[2]/p[3]/a",
+
+        "PAL_E_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[4]/div[4]/div/div/ul/li/div[2]/div/h2[3]/a",
+        "REQUEST_PAL_E_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[4]/div[4]/div/div/ul/li/div[2]/div/p[2]/a",
+
+        "EVIDENCE_BASE_AGILITY_LINK2_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[5]/div[1]/div/div/ul/li/div[2]/div[2]/h2[3]/a",
+        "EVIDENCE_BASE_AGILITY_REGISTER_BTN2_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[5]/div[1]/div/div/ul/li/div[2]/div[2]/p[3]/a",
+
+        "KANBA_SYSTEM_DESIGN_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[5]/div[2]/div/div/ul/li/div[2]/div[2]/h2[3]/a",
+        "REQUEST_KANBA_S_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[5]/div[2]/div/div/ul/li/div[2]/div[2]/p[3]/a",
+        "KANBA_MANAGEMENT_PROF_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[5]/div[3]/div/div/ul/li/div[2]/div/h2[2]/a",
+        "REQUEST_KANBA_M_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[5]/div[3]/div/div/ul/li/div[2]/div/p[3]/a",
+        "TEAM_KANBAN_PRACTITIONER_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[5]/div[4]/div/div/ul/li/div[2]/div/h2[2]/a",
+        "REQUEST_KANBA_P_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[5]/div[4]/div/div/ul/li/div[2]/div/p[3]/a",
+
+        "PSK_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[6]/div[1]/div/div/ul/li/div[2]/div/h2[2]/a",
+        "REQUEST_PSK_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[6]/div[1]/div/div/ul/li/div[2]/div/p[3]/a",
+
+        "M3_0_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[6]/div[2]/div/div/ul/li/div[2]/div[2]/h2[3]/a",
+        "REQUEST_M30_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[6]/div[2]/div/div/ul/li/div[2]/div[2]/p[3]/a",
+
+        "PSU_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[4]/div[6]/div[3]/div/div/ul/li/div[2]/div[2]/h2[3]/a",
+        "REQUEST_PSU_BTN_XPATH": "'//*[@id=\"post-39\"]/div/div[4]/div[6]/div[3]/div/div/ul/li/div[2]/div[2]/p[2]/a",
+
+        "AGILE_PRACTICES_AND_TOOLS_LINK_XPATH": "'//*[@id=\"post-39\"]/div/div[5]/div[1]/div/div/h1/a",
+        "BDD_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[5]/div[2]/div[2]/div/div/ul/li/div[2]/div[2]/h2[3]/a",
+        "REQUEST_BDD_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[5]/div[2]/div[2]/div/div/ul/li/div[2]/div[2]/p[3]/a",
+
+        "AGILE_TESTING_WORKSHOP_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[5]/div[2]/div[3]/div/div/ul/li/div[2]/div/h2[2]/a",
+        "REQUEST_AGILTESTING_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[5]/div[2]/div[3]/div/div/ul/li/div[2]/div/p[3]/a",
+
+        "AGILE_CULTURE_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[6]/div[1]/div/div/h1/span/a",
+
+        "AGILE_DIVERSITY_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[6]/div[2]/div[1]/div/div/ul/li/div[2]/div/h2[2]/a",
+        "REQUEST_AGILDIVERITY_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[6]/div[2]/div[1]/div/div/ul/li/div[2]/div/p[3]/a",
+
+        "AGILE_CONFLICT_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[6]/div[2]/div[2]/div/div/ul/li/div[2]/div/h2[1]/a",
+        "REQUEST_AGILCONFLICT_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[6]/div[2]/div[2]/div/div/ul/li/div[2]/div/p[3]/a",
+
+        "AGILE_MOTIVATION_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[6]/div[2]/div[3]/div/div/ul/li/div[2]/div/h2[1]/a",
+        "REQUEST_AGILMOTIVATION_BTN_XPATH": "'//*[@id=\"post-39\"]/div/div[6]/div[2]/div[3]/div/div/ul/li/div[2]/div/p[3]/a",
+
+        "AGILE_CHANGE_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[6]/div[2]/div[4]/div/div/ul/li/div[2]/div/h2[2]/a",
+        "REQUEST_AGILCHANGES_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[6]/div[2]/div[4]/div/div/ul/li/div[2]/div/p[3]/a",
+        
+        "REQUEST_CT_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[6]/div[5]/div/div[2]/h1/a",
+        "REQUEST_REQ_CT_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[6]/div[5]/div/div[3]/a",
+
+        "VIEW_ALL_UPCOMING_TRAININGS_BTN2_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[1]/div/div/h1/a",
+        "REQUEST_UNCOMING_T_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[2]/div[1]/div/a",
+        "VIEW_ALL_UPCOMING_TRAININGS_BTN3_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[2]/div[2]/div/a",
+
+        "AGILE_DEVOPS_MEETUP_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[3]/div/div/div/ul/li[1]/div[2]/div[2]/h2[3]/a",
+        "AGILE_DEVOPS_MEETUP_REGISTER_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[3]/div/div/div/ul/li[1]/div[2]/div[2]/p[3]/a",
+
+        "SCRUM_PULSE_WEBINAR_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[3]/div/div/div/ul/li/div[2]/div[2]/h2[3]/a",
+        "SCRUM_PULSE_WEBINAR_LINK2_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[3]/div/div/div/ul/li/div[2]/div[2]/p[3]/a",
+
+        "AGILE_GALLERY_SLIDER_XPATH": "//*[@id=\"post-39\"]/div/div[8]/div[2]/div[1]/div[2]",
+        "AGILE_GALLERY_SLIDER_TEXTS_XPATH": "//*[@id=\"post-39\"]/div/div[8]/div[2]/div[1]/div[2]/div[1]",
+        "AGILE_GALLERY_SLIDER_TEXTS_CSS_SELECTOR": "h2 a",
+        "AGILE_GALLERY_CONTROLLERS_XPATH": "//*[@id=\"post-39\"]/div/div[8]/div[2]/div[1]/div[2]/div[3]",
+        "AGILE_GALLERY_CONTROLLERS_TAG_NAME": "a",
+
+        "AGILE_BLOG_SLIDER_XPATH": "//*[@id=\"post-39\"]/div/div[8]/div[2]/div[2]",
+        "AGILE_BLOG_SLIDER_TEXTS_XPATH": "//*[@id=\"post-39\"]/div/div[8]/div[2]/div[2]/div[2]/div[1]",
+        "AGILE_BLOG_SLIDER_TEXTS_TAG_NAME": "h2",
+        "AGILE_BLOG_CONTROLLERS_XPATH": "//*[@id=\"post-39\"]/div/div[8]/div[2]/div[2]/div[2]/div[3]",
+        "AGILE_BLOG_CONTROLLERS_TAG_NAME": "a",
+
+        "AGILE_VIDEOS_IMAGE_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[9]/div[2]/div[1]/div[2]/a/img",
+        "AGILE_PRESENTATIONS_IMAGE_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[9]/div[2]/div[2]/div[2]/a/img",
+
+        "AGILE_PARTNERS_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[11]/div[1]/div/div/h1/a",
+        "READ_MORE_RAVI_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[11]/div[2]/div/div[1]/div/div[2]/div/a",
+        "READ_MORE_MARK_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[11]/div[2]/div/div[2]/div/div[2]/div/a",
+        "READ_MORE_CHARLES_B_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[11]/div[2]/div/div[3]/div/div[2]/div/a",
+        "READ_MORE_CHARLES_S_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[11]/div[2]/div/div[4]/div/div[2]/div/a",
+        "READ_MORE_HIREN_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[11]/div[2]/div/div[5]/div/div[2]/div/a",
+        "READ_MORE_RICH_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[11]/div[3]/div/div[1]/div/div[2]/div/a",
+        "READ_MORE_JULEE_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[11]/div[3]/div/div[2]/div/div[2]/div/a",
+        "READ_MORE_MAGDALENA_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[11]/div[3]/div/div[3]/div/div[2]/div/a",
+        "READ_MORE_JILL_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[11]/div[3]/div/div[4]/div/div[2]/div/a",
+        "READ_MORE_NAGESH_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[11]/div[3]/div/div[5]/div/div[2]/div/a"
     }
 }
