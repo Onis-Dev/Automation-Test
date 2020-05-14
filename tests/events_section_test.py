@@ -45,36 +45,6 @@ class TestEvents:
         assert Utils.is_displayed(self,view_all_upcoming_trainings_btn3), 'AGILE EVENTS LINK is not being displayed'           
 
 
-    # @allure.title("Test AGILE DEVOPS MEETUP LINK redirect is displayed and working") 
-    # @allure.description(" Test if link is displayed and redirect is correct")
-    # @allure.severity(allure.severity_level.CRITICAL)
-    # @pytest.mark.home_agile_devops_meetup_link
-    # def test_home_agile_devops_meetup_link(self, get_base_url):
-    #     agile_devops_meetup_link = HomeLocator.get_agile_devops_meetup_link(self)
-    #     agile_devops_meetup_link_url = self.CONST.get('AGILE_DEVOPS_MEETUP_LINK')
-    #     agile_devops_meetup_title = self.TITLES.get('AGILE_DEVOPS_MEETUP_TITLE')
-    #     assert Utils.is_displayed(self,agile_devops_meetup_link), 'AGILE DEVOPS MEETUP LINK is not being displayed'
-    #     path = Utils.click_link(self,agile_devops_meetup_link, agile_devops_meetup_title, agile_devops_meetup_link_url,True) 
-    #     self.driver.close()
-    #     self.driver.switch_to.window(self.driver.window_handles[0])
-    #     assert path == agile_devops_meetup_link_url, 'AGILE DEVOPS MEETUP Link is not working'
-        
-        
-    # @allure.title("Test AGILE DEVOPS MEETUP REGISTER BUTTON redirect is displayed and working") 
-    # @allure.description(" Test if link is displayed and redirect is correct")
-    # @allure.severity(allure.severity_level.CRITICAL)
-    # @pytest.mark.home_agile_devops_meetup_register_btn
-    # def test_home_agile_devops_meetup_register_btn(self, get_base_url):
-    #     self.driver.get(get_base_url)
-    #     agile_devops_meetup_register_btn = HomeLocator.get_agile_devops_meetup_register_btn(self)
-    #     agile_devops_meetup_register_btn_url = self.CONST.get('AGILE_DEVOPS_MEETUP_REGISTER_BTN')
-    #     agile_devops_meetup_register_title = self.TITLES.get('AGILE_DEVOPS_MEETUP_REGISTER_TITLE')
-    #     assert Utils.is_displayed(self,agile_devops_meetup_register_btn), 'AGILE DEVOPS MEETUP REGISTER BUTTON is not being displayed'
-    #     path = Utils.click_link(self,agile_devops_meetup_register_btn, agile_devops_meetup_register_title, agile_devops_meetup_register_btn_url,True) 
-    #     self.driver.close()
-    #     self.driver.switch_to.window(self.driver.window_handles[0])
-    #     assert path == agile_devops_meetup_register_btn_url, 'AGILE DEVOPS MEETUP REGISTER Link is not working'
-
     # @allure.title("Test SCRUM PULSE WEBINAR LINK redirect is displayed and working") 
     # @allure.description(" Test if link is displayed and redirect is correct")
     # @allure.severity(allure.severity_level.CRITICAL)

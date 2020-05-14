@@ -91,9 +91,6 @@
         "REQUEST_UNCOMING_T_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[2]/div[1]/div/a",
         "VIEW_ALL_UPCOMING_TRAININGS_BTN3_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[2]/div[2]/div/a",
 
-        "AGILE_DEVOPS_MEETUP_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[3]/div/div/div/ul/li[1]/div[2]/div[2]/h2[3]/a",
-        "AGILE_DEVOPS_MEETUP_REGISTER_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[3]/div/div/div/ul/li[1]/div[2]/div[2]/p[3]/a",
-
         "SCRUM_PULSE_WEBINAR_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[3]/div/div/div/ul/li/div[2]/div[2]/h2[3]/a",
         "SCRUM_PULSE_WEBINAR_LINK2_XPATH": "//*[@id=\"post-39\"]/div/div[7]/div[3]/div/div/div/ul/li/div[2]/div[2]/p[3]/a",
 
