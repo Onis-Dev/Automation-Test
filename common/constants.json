@@ -2,12 +2,6 @@
     "driverConfig":{
         "PATH": "/var/lib/jenkins/workspace/Automation/chromedriver"
     },
-    "TOP_HEADER":{
-        "CONTACTUS": "| Contact Us |",
-        "CONTACTUS_LINK": "index.php/contact-us/",
-        "PHONE": "214-785-5570",
-        "EMAIL": "info@smoothapps.com"
-    },
     "HEADER":{
         "TRAINING_LINK": "index.php/training/",
         "SUBMENU_AGILEFRAMEWORK": "index.php/agile-frameworks/",
