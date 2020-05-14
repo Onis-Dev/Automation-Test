@@ -264,14 +264,6 @@ class HomeLocator:
     def get_view_all_upcoming_trainings_btn3(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('VIEW_ALL_UPCOMING_TRAININGS_BTN3_XPATH'))
 
-    """Get AGILE DEVOPS MEETUP link element"""
-    def get_agile_devops_meetup_link(self):
-        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_DEVOPS_MEETUP_LINK_XPATH'))
-
-    """Get AGILE DEVOPS MEETUP button register element"""
-    def get_agile_devops_meetup_register_btn(self):
-        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_DEVOPS_MEETUP_REGISTER_BTN_XPATH'))
-
     """Get SCCRUM PULSE WEBINAR link element"""
     def get_scrum_pulse_webinar_link(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('SCRUM_PULSE_WEBINAR_LINK_XPATH'))
