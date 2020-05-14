@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from locators.home_locator import HomeLocator
-from common.environment import CONSTANTS
+from common.environment import CONSTANTS, PAGE_ELEMENTS
 from common.utils import Utils
 
 
@@ -15,6 +15,7 @@ class TestPartners:
 
     CONST = CONSTANTS['HOME']
     TITLES = CONSTANTS['TITLES_PAGES']
+    ELEMENTS = PAGE_ELEMENTS['HOME']
 
      #AGILE PARTNERS
 

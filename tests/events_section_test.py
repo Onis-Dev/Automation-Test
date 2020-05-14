@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from locators.home_locator import HomeLocator
-from common.environment import CONSTANTS
+from common.environment import CONSTANTS, PAGE_ELEMENTS
 from common.utils import Utils
 
 
@@ -16,6 +16,7 @@ class TestEvents:
     CONST = CONSTANTS['HOME']
     TITLES = CONSTANTS['TITLES_PAGES']
     CONSTHEADER = CONSTANTS['HEADER']
+    ELEMENTS = PAGE_ELEMENTS['HOME']
 
     #AGILE EVENTS
     @allure.title("Test AGILE EVENTS LINK is displayed") 

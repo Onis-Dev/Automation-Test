@@ -6,5 +6,5 @@ with open('./common/constants.json', 'r') as f:
     CONSTANTS = json.load(f)
 
 PAGE_ELEMENTS = {}
-with open('./common/page_elements.json', 'r') as f:
+with open('./common/aws_elements.json', 'r') as f:
     PAGE_ELEMENTS = json.load(f)
