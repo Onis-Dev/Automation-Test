@@ -13,7 +13,7 @@
         "EVIDENCE_AGILE_REGISTER_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div[5]/div[5]/a",
         "REQUEST_CUSTOM_TRAINING_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[4]/div[2]/div[1]/div/a",
         "UPCOMING_TRAINING_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[4]/div[2]/div[2]/div/a",
-        "INTRO_TO_AGILE_LINK_XPATH": "//*[@id=\"et-boc\"]/div/div/div[4]/div[3]/div[1]/div/div/div/ul/li/div[2]/div/h2[2]/a",
+        "INTRO_TO_AGILE_LINK_XPATH": "//*[@id=\"et-boc\"]/div/div/div[4]/div[3]/div[1]/div/div/div/ul/li/div[2]/div/h2[3]/a",
         "REQUEST_AGILE_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[4]/div[3]/div[1]/div/div/div/ul/li/div[2]/div/p[3]/a",
         "PSF_LINK_XPATH": "//*[@id=\"et-boc\"]/div/div/div[4]/div[3]/div[2]/div[1]/div/div/ul/li/div[2]/div[2]/h2[4]/a",
         "PSF_REQUEST_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[4]/div[3]/div[2]/div[1]/div/div/ul/li/div[2]/div[2]/p[3]/a",
