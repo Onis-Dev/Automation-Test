@@ -1,5 +1,12 @@
 {
     "HOME":{
+        "FACEBOOK_ICON_XPATH": "//*[@id=\"et-secondary-menu\"]/ul[1]/li[1]/a",
+        "TWITTER_ICON_XPATH": "//*[@id=\"et-secondary-menu\"]/ul[1]/li[2]/a",
+        "GOOGLE_ICON_XPATH": "//*[@id=\"et-secondary-menu\"]/ul[1]/li[3]/a",
+        "LINKEDIN_ICON_XPATH": "//*[@id=\"et-secondary-menu\"]/ul[1]/li[4]/a",
+        "RSS_ICON_XPATH": "//*[@id=\"et-secondary-menu\"]/ul[1]/li[5]/a",
+        "CONTACT_US_CSS": "#et-secondary-nav > li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-4912 > a",
+
         "LEARN_MORE_BTN_XPATH": "//*[@id=\"post-39\"]/div/div[1]/div/div[2]/div[2]/a",
 
         "PSPO_LINK_XPATH": "//*[@id=\"post-39\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div[1]/div[1]/a",

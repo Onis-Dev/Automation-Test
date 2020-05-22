@@ -19,7 +19,7 @@ class TestTrainingCatalogue:
 
   #TRAINING CATALOGUE SECTION
     @allure.title("Test REQUEST CUSTOM TRAINING BUTTON is displayed and working") 
-    @allure.description(" Test if link is displayed and redirect is correct")
+    @allure.description(" Test if button is displayed and redirect is correct")
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.home_request_custom_training_btn
     def test_home_request_custom_training_btn(self, get_base_url):
