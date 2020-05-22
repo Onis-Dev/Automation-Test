@@ -1,5 +1,12 @@
 {
     "HOME": {
+        "FACEBOOK_ICON_XPATH": "//*[@id=\"et-secondary-menu\"]/ul[1]/li[1]/a",
+        "TWITTER_ICON_XPATH": "//*[@id=\"et-secondary-menu\"]/ul[1]/li[2]/a",
+        "GOOGLE_ICON_XPATH": "//*[@id=\"et-secondary-menu\"]/ul[1]/li[3]/a",
+        "LINKEDIN_ICON_XPATH": "//*[@id=\"et-secondary-menu\"]/ul[1]/li[3]/a",
+        "RSS_ICON_XPATH": "//*[@id=\"et-secondary-nav\"]/li[1]/a",
+        "CONTACT_US_CSS": "#et-secondary-nav > li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-4912 > a",
+
         "LEARN_MORE_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[1]/div/div[2]/div[2]/a",
         "PSPO_LINK_XPATH": "//*[@id=\"et-boc\"]/div/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div[1]/div[1]/a",
         "PSPO_REGISTER_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div[1]/div[5]/a",
@@ -11,6 +18,7 @@
         "PSMII_REGISTER_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div[4]/div[5]/a",
         "EVIDENCE_AGILE_LINK_XPATH": "//*[@id=\"et-boc\"]/div/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div[5]/div[1]/a",
         "EVIDENCE_AGILE_REGISTER_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[3]/div[2]/div/div[2]/div/div/div[2]/div[5]/div[5]/a",
+        
         "REQUEST_CUSTOM_TRAINING_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[4]/div[2]/div[1]/div/a",
         "UPCOMING_TRAINING_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[4]/div[2]/div[2]/div/a",
         "INTRO_TO_AGILE_LINK_XPATH": "//*[@id=\"et-boc\"]/div/div/div[4]/div[3]/div[1]/div/div/div/ul/li/div[2]/div/h2[3]/a",
@@ -88,6 +96,21 @@
         "READ_MORE_JULEE_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[8]/div[3]/div/div[2]/div/div[2]/div/div/a",
         "READ_MORE_MAGDALENA_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[8]/div[3]/div/div[3]/div/div[2]/div/div/a",
         "READ_MORE_JILL_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[8]/div[3]/div/div[4]/div/div[2]/div/div/a",
-        "READ_MORE_NAGESH_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[8]/div[3]/div/div[5]/div/div[2]/div/div/a"
+        "READ_MORE_NAGESH_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[8]/div[3]/div/div[5]/div/div[2]/div/div/a",
+
+        "FACEBOOK_ICON_FOOTER_XPATH": "//*[@id=\"footer-bottom\"]/div/ul/li[1]/a",
+        "TWITTER_ICON_FOOTER_XPATH": "//*[@id=\"footer-bottom\"]/div/ul/li[2]/a",
+        "LINKEDIN_ICON_FOOTER_XPATH": "//*[@id=\"footer-bottom\"]/div/ul/li[3]/a",
+        "COPYRIGHT_ID": "footer-info"
+    },
+    "TRAINING":{
+        "T_REQUEST_CUSTOM_TRAINING_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[2]/div[1]/div/a",
+        "T_UPCOMING_TRAINING_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[2]/div[2]/div/a",
+        "T_REQUEST_CUSTOM_TRAINING_BTN2_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[17]/div/div[3]/a",
+        "AF_REQUEST_CUSTOM_TRAINING_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[2]/div[1]/div/a",
+        "AF_UPCOMING_TRAINING_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[2]/div[2]/div/a",
+        "AF_REQUEST_CUSTOM_TRAINING_BTN2_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[11]/div/div[3]/a",
+        "AC_REQUEST_CUSTOM_TRAINING_BTN2_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[3]/div/div[2]/a"
     }
+
 }

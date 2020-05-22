@@ -2,6 +2,12 @@
     "driverConfig":{
         "PATH": "/var/lib/jenkins/workspace/Automation/chromedriver"
     },
+    "TOPHEADER":{
+        "CONTACTUS": "| Contact Us |",
+        "CONTACTUS_LINK": "index.php/contact-us/",
+        "PHONE": "214-785-5570",
+        "EMAIL": "info@smoothapps.com"
+    },
     "HEADER":{
         "TRAINING_LINK": "index.php/training/",
         "SUBMENU_AGILEFRAMEWORK": "index.php/agile-frameworks/",
@@ -32,6 +38,7 @@
         "EVIDENCE_AGIL_LINK": "index.php/training/agile-roi-for-executives",
         "EVIDENCE_AGIL_REGISTER_LINK": "https://www.eventbrite.com/e/evidence-based-agility-tickets-77234678001",
         "CONTACTUS_REGISTER_BTN": "index.php/contact-us",
+        "CONTACTUS_REGISTER_BTN2": "index.php/contact-us/",
         "VIEW_ALL_UPCOMING_TRAININGS_BTN": "index.php/upcoming-trainings/",
         "INTRO_TO_AGILE_LINK": "index.php/training/intro-to-agile",
         "PSF_LINK": "index.php/training/professional-scrum-foundations/",
