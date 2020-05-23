@@ -25,7 +25,7 @@ def setup(request):
     request.cls.driver = web_driver
     
     yield web_driver
-    web_driver.close()
+    web_driver.quit()
 
 # REDIRECT TO HOME PAGE
 @pytest.fixture(scope="session")
@@ -36,14 +36,14 @@ def get_base_url(request):
 
 # REDIRECT TO TRAINING PAGE
 @pytest.fixture(scope="session")
-def get_training_url(request):
-    base_url = request.config.option.url
+def get_training_url(request, get_base_url):
+    base_url = get_base_url
     training_url = base_url + CONSTANTS['HEADER'].get('TRAINING_LINK')
     return training_url
 
 # REDIRECT TO TRAINING FRAMEWORK PAGE
 @pytest.fixture(scope="session")
-def get_training_af_url(request):
-    base_url = request.config.option.url
+def get_training_af_url(request, get_base_url):
+    base_url = get_base_url
     training_url = base_url + CONSTANTS['HEADER'].get('SUBMENU_AGILEFRAMEWORK')
     return training_url

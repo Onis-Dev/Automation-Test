@@ -41,4 +41,27 @@ class TrainingLocator:
     """Get REQUESTTRAINING button element"""
     def get_ac_request_training_btn(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AC_REQUEST_CUSTOM_TRAINING_BTN2_XPATH'))
+
+    
+    def get_contactus_container_form(self):
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_CONTAINER_FORM'))
+
+    def get_form_name_field(self):
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_FORM_NAME_FIELD'))
+    
+    def get_form_email_field(self):
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_FORM_EMAIL_FIELD'))
+
+    def get_form_company_field(self):
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_FORM_COMPANY_FIELD'))
+
+    def get_form_message_field(self):
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_FORM_MESSAGE_FIELD'))
+
+    def get_form_submit_btn(self):
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_SUBMIT_BUTTON'))
+
+    def get_form_notification(self):
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_FORM_NOTIFICATION'))
+
     
