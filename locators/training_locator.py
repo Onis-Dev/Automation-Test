@@ -40,27 +40,34 @@ class TrainingLocator:
     #AGILE CULTURE PAGE
     """Get REQUESTTRAINING button element"""
     def get_ac_request_training_btn(self):
-        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AC_REQUEST_CUSTOM_TRAINING_BTN2_XPATH'))
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AC_REQUEST_TRAINING_BTN_XPATH'))
 
-    
+    #TEST CONTACT US FORM
+    """Get CONTACT US FORM"""
     def get_contactus_container_form(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_CONTAINER_FORM'))
 
+    """Get FORM NAME element"""
     def get_form_name_field(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_FORM_NAME_FIELD'))
     
+    """Get FORM EMAIL element"""
     def get_form_email_field(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_FORM_EMAIL_FIELD'))
 
+    """Get FORM COMPANY element"""
     def get_form_company_field(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_FORM_COMPANY_FIELD'))
 
+    """Get FORM MESSAGE element"""
     def get_form_message_field(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_FORM_MESSAGE_FIELD'))
 
+    """Get FORM SUBMIT element"""
     def get_form_submit_btn(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_SUBMIT_BUTTON'))
 
+    """Get FORM NOTIFICATION element"""
     def get_form_notification(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('T_CONTACTUS_FORM_NOTIFICATION'))
 

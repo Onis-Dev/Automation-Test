@@ -71,7 +71,7 @@ class TestEvents:
         scrum_pulse_webinar_link2 = HomeLocator.get_scrum_pulse_webinar_link2(self)
         assert Utils.is_displayed(self,scrum_pulse_webinar_link2), 'SCRUM PULSE WEBINAR REGISTER BUTTON is not being displayed'
 
-    
+    #BLOG SECTION
     @allure.title("Test AGILE GALLERY SLIDER  button is displayed and working") 
     @allure.description(" Test if AGILE GALLERY slider is working correctly")
     @allure.severity(allure.severity_level.BLOCKER)

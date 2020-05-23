@@ -14,7 +14,7 @@ class TestFooter:
 
     ELEMENTS = PAGE_ELEMENTS['HOME']
 
-
+    #FOOTER  HOME PAGE
     @allure.title("Test social media footer icons")
     @allure.description(" Test if social media footer icons are displayed")
     @allure.severity(allure.severity_level.NORMAL)
