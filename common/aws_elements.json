@@ -110,7 +110,7 @@
         "AF_REQUEST_CUSTOM_TRAINING_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[2]/div[1]/div/a",
         "AF_UPCOMING_TRAINING_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[2]/div[2]/div/a",
         "AF_REQUEST_CUSTOM_TRAINING_BTN2_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[11]/div/div[3]/a",
-        "AC_REQUEST_CUSTOM_TRAINING_BTN2_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[3]/div/div[2]/a", 
+        "AC_REQUEST_TRAINING_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[2]/div/div[1]/div[3]/div/div[2]/a", 
         "T_CONTACTUS_CONTAINER_FORM": "//*[@id=\"et_pb_contact_form_0\"]",
         "T_CONTACTUS_FORM_NAME_FIELD": "//*[@id=\"et_pb_contact_name_0\"]",
         "T_CONTACTUS_FORM_EMAIL_FIELD": "//*[@id=\"et_pb_contact_email_0\"]",

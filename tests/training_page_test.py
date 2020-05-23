@@ -18,6 +18,8 @@ class TestTraining:
     TITLES = CONSTANTS['TITLES_PAGES']
     ELEMENTS = PAGE_ELEMENTS['TRAINING']
 
+
+    #TRAINING PAGE
     @allure.title("Test TRAINING LINK redirect is working") 
     @allure.description(" Test if link redirect is correct")
     @allure.severity(allure.severity_level.BLOCKER)
@@ -57,7 +59,7 @@ class TestTraining:
         assert path == t_view_all_upcoming_trainings_btn_url, 'VIEW ALL UPCOMING TRAININGS LINK in training page is not working'
 
 
-    #CUSTOM TRAINING
+    #CUSTOM TRAINING INTO TRAINING PAGE
        
     @allure.title("Test CUSTOM TRAINING LINK in training page, is displayed") 
     @allure.description(" Test if button is displayed")
@@ -77,7 +79,6 @@ class TestTraining:
     def test_training_agile_framework_link(self, get_base_url):
         self.driver.get(get_base_url)
         training_link = HeaderLocator.get_training_link(self)
-       # assert Utils.is_displayed(self,training_link), "Can't find link element"
         Utils.hover_on_link(self,training_link)
         agile_framework_link = HeaderLocator.get_submenu_training(self)[0]
         agile_framework_url = get_base_url + self.CONSTHEADER.get('SUBMENU_AGILEFRAMEWORK')
@@ -127,7 +128,6 @@ class TestTraining:
     def test_training_agile_culture_link(self, get_base_url):
         self.driver.get(get_base_url)
         training_link = HeaderLocator.get_training_link(self)
-       # assert Utils.is_displayed(self,training_link), "Can't find link element"
         Utils.hover_on_link(self,training_link)
         agile_culture_link = HeaderLocator.get_submenu_training(self)[2]
         agile_culture_url = get_base_url + self.CONSTHEADER.get('SUBMENU_AGILECULTURE')
@@ -146,6 +146,7 @@ class TestTraining:
         path = Utils.click_link(self,ac_request_training_btn, contactus_register_title, ac_request_training_btn_url) 
         assert path == ac_request_training_btn_url, 'REQUEST CUSTOM TRAINING LINK in AGUILE CULTURE page is not working'
 
+    #CONTACT US FORM
     
     @allure.title("Test CONTACTUS FORM Training page") 
     @allure.description(" Test if form sends data correctly")
