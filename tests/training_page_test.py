@@ -16,7 +16,6 @@ class TestTraining:
     CONST = CONSTANTS['HOME']
     CONSTHEADER = CONSTANTS['HEADER']
     TITLES = CONSTANTS['TITLES_PAGES']
-    ELEMENTS = PAGE_ELEMENTS['HOME']
     ELEMENTS = PAGE_ELEMENTS['TRAINING']
 
     @allure.title("Test TRAINING LINK redirect is working") 
@@ -146,3 +145,26 @@ class TestTraining:
         assert Utils.is_displayed(self,ac_request_training_btn), 'REQUEST CUSTOM TRAINING BUTTON in AGUILE CULTURE page is not being displayed'
         path = Utils.click_link(self,ac_request_training_btn, contactus_register_title, ac_request_training_btn_url) 
         assert path == ac_request_training_btn_url, 'REQUEST CUSTOM TRAINING LINK in AGUILE CULTURE page is not working'
+
+    
+    @allure.title("Test CONTACTUS FORM Training page") 
+    @allure.description(" Test if form sends data correctly")
+    @allure.severity(allure.severity_level.BLOCKER)
+    @pytest.mark.contactus_training_page
+    def test_contactus_training_page(self, get_base_url, get_training_url):
+        self.driver.get(get_training_url)
+        contactus_container_form = TrainingLocator.get_contactus_container_form(self)
+        assert Utils.is_displayed(self, contactus_container_form), "Training CONTACT US FORM is not being displayed"
+        contactus_name_field = TrainingLocator.get_form_name_field(self)
+        contactus_email_field = TrainingLocator.get_form_email_field(self)
+        contactus_company_field = TrainingLocator.get_form_company_field(self)
+        contactus_message_field = TrainingLocator.get_form_message_field(self)
+        contactus_name_field.send_keys('test user')
+        contactus_email_field.send_keys('test@email.com')
+        contactus_company_field.send_keys('test company')
+        contactus_message_field.send_keys('test message')
+        contactus_submit_btn = TrainingLocator.get_form_submit_btn(self)
+        contactus_submit_btn.click()
+        contactus_form_notification = TrainingLocator.get_form_notification(self)
+        assert Utils.is_displayed(self,contactus_form_notification), "Training CONTACT US FORM is not working correctly"
+
