@@ -23,15 +23,11 @@ class TestTopHeader:
     def test_social_media_icons(self):
         facebookIcon = Utils.is_displayed(self,TopHeaderLocator.get_facebook_icon(self))
         twitterIcon = Utils.is_displayed(self,TopHeaderLocator.get_twitter_icon(self))
-     #   googleIcon = Utils.is_displayed(self,TopHeaderLocator.get_google_icon(self))
         linkedinIcon = Utils.is_displayed(self,TopHeaderLocator.get_linkedIn_icon(self))
-     #   rssIcon = Utils.is_displayed(self,TopHeaderLocator.get_rss_icon(self))
 
         assert facebookIcon, 'facebook icon is not being displayed'
         assert twitterIcon, 'twitter icon is not being displayed'
-     #   assert googleIcon, 'google icon is not being displayed'
         assert linkedinIcon, 'linkedin icon is not being displayed'
-     #   assert rssIcon, 'rss icon is not being displayed'
     
     @allure.title("Test 'Contact Us' link redirect")
     @allure.description("Test if contact us link is displayed and working")

@@ -9,10 +9,11 @@ from common.utils import Utils
 
 """Class to get all elements from HOME section"""
 class HomeLocator:
-    # Learn More
+    # LEARN MORE
     """Get learn more button"""
     def get_learn_more_btn(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('LEARN_MORE_BTN_XPATH'))
+    
     #*****UPCOMING TRAININGS
     # PSPO
     """Get PSPO link element"""
@@ -59,7 +60,7 @@ class HomeLocator:
     def get_evidence_agil_register_btn(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('EVIDENCE_AGILE_REGISTER_BTN_XPATH'))
 
-    ##
+    # TRAINING CATALOGUE
     """Get CONTACTUS button register element"""
     def get_request_custom_training_btn(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('REQUEST_CUSTOM_TRAINING_BTN_XPATH'))
@@ -188,6 +189,7 @@ class HomeLocator:
     def get_request_psu_btn(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('REQUEST_PSU_BTN_XPATH'))
 
+    # AGUILE PRACTICES AND TOOLS
     """Get AGILE PRACTICES AND TOOLS link element"""
     def get_agile_practices_and_tools_link(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_PRACTICES_AND_TOOLS_LINK_XPATH'))
@@ -208,6 +210,7 @@ class HomeLocator:
     def get_request_agiltesting_btn(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('REQUEST_AGILTESTING_BTN_XPATH'))
 
+    # AGUILE CULTURE
     """Get AGILE CULTURE link element"""
     def get_agile_culture_link(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_CULTURE_LINK_XPATH'))
@@ -244,6 +247,7 @@ class HomeLocator:
     def get_request_agilchanges_btn(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('REQUEST_AGILCHANGES_BTN_XPATH'))
 
+    # CUSTOM TRAINING
     """Get CONTACTUS button18 register element"""
     def get_request_ct_btn(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('REQUEST_CT_BTN_XPATH'))
@@ -251,7 +255,8 @@ class HomeLocator:
     """Get CONTACTUS button19 register element"""
     def get_request_req_ct_btn(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('REQUEST_REQ_CT_BTN_XPATH'))
-
+    
+    # AGILE EVENTS
     """Get VIEW ALL UPCOMING TRAININGS BTN2"""		
     def get_view_all_upcoming_trainings_btn2(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('VIEW_ALL_UPCOMING_TRAININGS_BTN2_XPATH'))
@@ -264,26 +269,8 @@ class HomeLocator:
     def get_view_all_upcoming_trainings_btn3(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('VIEW_ALL_UPCOMING_TRAININGS_BTN3_XPATH'))
 
-    """Get SCCRUM PULSE WEBINAR link element"""
-    def get_scrum_pulse_webinar_link(self):
-        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('SCRUM_PULSE_WEBINAR_LINK_XPATH'))
-
-    """Get SCRUM PULSE WEBINAR link2 element"""		
-    def get_scrum_pulse_webinar_link2(self):
-        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('SCRUM_PULSE_WEBINAR_LINK2_XPATH'))
-    
-    """Get agile gallery slider element"""
-    def get_agile_gallery_slider(self):
-        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_GALLERY_SLIDER_XPATH'))
-
-    """Get agile gallery slider titles"""
-    def get_agile_gallery_slider_texts(self):
-        return Utils.find_elements_by_css_selector(self, self.ELEMENTS.get('AGILE_GALLERY_SLIDER_TEXTS_XPATH'), self.ELEMENTS.get('AGILE_GALLERY_SLIDER_TEXTS_CSS_SELECTOR'))
-
-    """Get agile gallery slider controls"""
-    def get_agile_gallery_controllers(self):
-        return Utils.find_elements_by_tag_name(self, self.ELEMENTS.get('AGILE_GALLERY_CONTROLLERS_XPATH'), self.ELEMENTS.get('AGILE_GALLERY_CONTROLLERS_TAG_NAME'))
-    
+   
+    # SLIDES
     """Get agile blog slider element"""
     def get_agile_blog_slider(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_BLOG_SLIDER_XPATH'))
@@ -291,19 +278,8 @@ class HomeLocator:
     """Get agile blog slider controls"""
     def get_agile_blog_controllers(self):
         return Utils.find_elements_by_tag_name(self,self.ELEMENTS.get('AGILE_BLOG_CONTROLLERS_XPATH'), self.ELEMENTS.get('AGILE_BLOG_CONTROLLERS_TAG_NAME'))
-    
-    def get_agile_blog_slider_right_arrow_btn(self):
-        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_BLOG_RIGHT_ARROW_BUTTON'))
-
-    """Get agile videos image link element"""
-    def get_agile_videos_image_link(self):
-        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_VIDEOS_IMAGE_LINK_XPATH'))
-    
-    """Get agile presentations image link element"""
-    def get_agile_presentations_image_link(self):
-        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_PRESENTATIONS_IMAGE_LINK_XPATH'))
-
-    #AGILE PARTNERS
+   
+    # AGILE PARTNERS
     """Get AGILE PARTNERS link element"""		
     def get_agile_partners_link(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_PARTNERS_LINK_XPATH'))
@@ -347,4 +323,3 @@ class HomeLocator:
     """Get READ MORE NAGESH element"""		
     def get_read_more_nagesh_btn(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('READ_MORE_NAGESH_BTN_XPATH'))
-    
