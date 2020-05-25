@@ -74,20 +74,12 @@
         "REQUEST_UNCOMING_T_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[12]/div[2]/div[1]/div/a",
         "VIEW_ALL_UPCOMING_TRAININGS_BTN3_XPATH": "//*[@id=\"et-boc\"]/div/div/div[12]/div[2]/div[2]/div/a",
             
-        "AGILE_GALLERY_SLIDER_XPATH": "",
-        "AGILE_GALLERY_SLIDER_TEXTS_XPATH": "",
-        "AGILE_GALLERY_SLIDER_TEXTS_CSS_SELECTOR": "",
-        "AGILE_GALLERY_CONTROLLERS_XPATH": "",
-        "AGILE_GALLERY_CONTROLLERS_TAG_NAME": "",
 
         "AGILE_BLOG_SLIDER_XPATH": "//*[@id=\"et-boc\"]/div/div/div[14]/div/div/div/div/div",
         "AGILE_BLOG_CONTROLLERS_XPATH": "//*[@id=\"sp-post-carousel-9223\"]/ul",
         "AGILE_BLOG_CONTROLLERS_TAG_NAME": "li",
-        "AGILE_BLOG_RIGHT_ARROW_BUTTON": "//*[@id=\"sp-post-carousel-9223\"]/div[3]",
 
-        "AGILE_VIDEOS_IMAGE_LINK_XPATH": "",
-        "AGILE_PRESENTATIONS_IMAGE_LINK_XPATH": "",
-            
+               
         "AGILE_PARTNERS_LINK_XPATH": "//*[@id=\"et-boc\"]/div/div/div[16]/div[1]/div/div/div/h1/a",
         "READ_MORE_RAVI_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[16]/div[2]/div/div[1]/div/div[2]/div/div/a",
         "READ_MORE_MARK_BTN_XPATH": "//*[@id=\"et-boc\"]/div/div/div[16]/div[2]/div/div[2]/div/div[2]/div/div/a",
