@@ -184,3 +184,22 @@ class TestAgileSection:
         self.driver.get(get_base_url)
         request_agilchanges_btn = HomeLocator.get_request_agilchanges_btn(self)  
         assert Utils.is_displayed(self,request_agilchanges_btn), 'AGILE CHANGE REQUEST BUTTON is not being displayed'  
+
+    #CUSTOM TRAINING
+       
+    @allure.title("Test CUSTOM TRAINING LINK is displayed") 
+    @allure.description(" Test if button is displayed")
+    @allure.severity(allure.severity_level.BLOCKER)
+    @pytest.mark.home_request_ct_btn
+    def test_home_request_ct_btn(self, get_base_url):
+        request_ct_btn = HomeLocator.get_request_ct_btn(self)  
+        assert Utils.is_displayed(self,request_ct_btn), 'CUSTOM TRAINING LINK is not being displayed'
+
+
+    @allure.title("Test RESQUEST CUSTOM TRAINING BUTTON is displayed") 
+    @allure.description(" Test if button is displayed")
+    @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.home_request_req_ct_btn
+    def test_home_request_req_ct_btn(self, get_base_url):
+        request_req_ct_btn = HomeLocator.get_request_req_ct_btn(self)  
+        assert Utils.is_displayed(self,request_req_ct_btn), 'RESQUEST CUSTOM TRAINING BUTTON is not being displayed'
