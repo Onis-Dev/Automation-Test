@@ -81,10 +81,9 @@
         "AGILE_GALLERY_CONTROLLERS_TAG_NAME": "",
 
         "AGILE_BLOG_SLIDER_XPATH": "//*[@id=\"et-boc\"]/div/div/div[14]/div/div/div/div/div",
-        "AGILE_BLOG_SLIDER_TEXTS_XPATH": "//*[@id=\"sp-post-carousel-9223\"]/div[2]/div/div[4]",
-        "AGILE_BLOG_SLIDER_TEXTS_TAG_NAME": "h2",
-        "AGILE_BLOG_CONTROLLERS_XPATH": "//*[@id=\"slick-slide00\"]/button",
-        "AGILE_BLOG_CONTROLLERS_TAG_NAME": "a",
+        "AGILE_BLOG_CONTROLLERS_XPATH": "//*[@id=\"sp-post-carousel-9223\"]/ul",
+        "AGILE_BLOG_CONTROLLERS_TAG_NAME": "li",
+        "AGILE_BLOG_RIGHT_ARROW_BUTTON": "//*[@id=\"sp-post-carousel-9223\"]/div[3]",
 
         "AGILE_VIDEOS_IMAGE_LINK_XPATH": "",
         "AGILE_PRESENTATIONS_IMAGE_LINK_XPATH": "",
