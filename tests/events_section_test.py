@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from time import sleep
 
 from locators.home_locator import HomeLocator
 from common.environment import CONSTANTS, PAGE_ELEMENTS
@@ -98,18 +99,14 @@ class TestEvents:
     def test_home_agile_blog_slider(self, get_base_url):
         slider = HomeLocator.get_agile_blog_slider(self)
         assert Utils.is_displayed(self, slider), "slider content is not being displayed"
-        slider_titles = HomeLocator.get_agile_blog_slider_texts(self)
-        sliderControl = HomeLocator.get_agile_blog_controllers(self)
-        page_count = 0
-        has_text = True
-        while page_count < len(sliderControl):
-            sliderControl[page_count].click()
-            if slider_titles[page_count].get_attribute('textContent') == None or slider_titles[page_count].get_attribute('textContent') == "":
-                has_text = False
-                break
-            page_count += 1
-        assert has_text, "AGILE BLOG SLIDER is not working correctly"
-
+        slider_first_control = HomeLocator.get_agile_blog_controllers(self)[0]
+        slider_first_control.click()
+        sleep(1)
+        slider_second_control = HomeLocator.get_agile_blog_controllers(self)[1]
+        slider_second_control.click()
+        slider_first_control = HomeLocator.get_agile_blog_controllers(self)[0]
+        is_active_on_change= slider_first_control.get_attribute('class')
+        assert  "active" not in is_active_on_change, "AGILE BLOG SLIDER is not working correctly"
 
     # @allure.title("Test AGILE VIDEOS IMAGE LINK is displayed and working") 
     # @allure.description(" Test if AGILE VIDEOS IMAGE LINK is working correctly")

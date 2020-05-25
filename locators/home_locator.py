@@ -288,13 +288,12 @@ class HomeLocator:
     def get_agile_blog_slider(self):
         return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_BLOG_SLIDER_XPATH'))
 
-    """Get agile blog slider titles"""
-    def get_agile_blog_slider_texts(self):
-        return Utils.find_elements_by_tag_name(self,self.ELEMENTS.get('AGILE_BLOG_SLIDER_TEXTS_XPATH'), self.ELEMENTS.get('AGILE_BLOG_SLIDER_TEXTS_TAG_NAME'))
-
     """Get agile blog slider controls"""
     def get_agile_blog_controllers(self):
         return Utils.find_elements_by_tag_name(self,self.ELEMENTS.get('AGILE_BLOG_CONTROLLERS_XPATH'), self.ELEMENTS.get('AGILE_BLOG_CONTROLLERS_TAG_NAME'))
+    
+    def get_agile_blog_slider_right_arrow_btn(self):
+        return Utils.find_element_by_xpath(self, self.ELEMENTS.get('AGILE_BLOG_RIGHT_ARROW_BUTTON'))
 
     """Get agile videos image link element"""
     def get_agile_videos_image_link(self):
